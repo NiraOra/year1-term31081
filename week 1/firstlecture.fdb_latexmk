@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1662978126 "/Users/niranjanaarunmenon/Desktop/Undergrad Course/First Year /Term 3 /Discrete Mathematics/term3-1081/week 1/firstlecture.tex" "firstlecture.pdf" "firstlecture" 1662978126
-  "/Users/niranjanaarunmenon/Desktop/Undergrad Course/First Year /Term 3 /Discrete Mathematics/term3-1081/week 1/firstlecture.tex" 1662978125 892 667ea88c2c5d9489d5977dff8c8831b9 ""
+["pdflatex"] 1662979212 "/Users/niranjanaarunmenon/Desktop/Undergrad Course/First Year /Term 3 /Discrete Mathematics/term3-1081/week 1/firstlecture.tex" "firstlecture.pdf" "firstlecture" 1662979212
+  "/Users/niranjanaarunmenon/Desktop/Undergrad Course/First Year /Term 3 /Discrete Mathematics/term3-1081/week 1/firstlecture.tex" 1662979211 1825 3a8e0bbf0caba631892f4ff665bed8af ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1246382020 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1246382020 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
@@ -74,9 +74,9 @@
   "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1647878959 4410336 7d30a02e9fa9a16d7d1f8d037ba69641 ""
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1661306408 2826441 12d1eb35fb558fb993dc66a32e4b5118 ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
-  "firstlecture.aux" 1662978126 246 1209e0eee688bad20df794a3e78f334b "pdflatex"
-  "firstlecture.tex" 1662978125 892 667ea88c2c5d9489d5977dff8c8831b9 ""
-  "firstlecture.toc" 1662978126 132 3990abdf058e50795a57702ea19c9d2a "pdflatex"
+  "firstlecture.aux" 1662979212 246 1209e0eee688bad20df794a3e78f334b "pdflatex"
+  "firstlecture.tex" 1662979211 1825 3a8e0bbf0caba631892f4ff665bed8af ""
+  "firstlecture.toc" 1662979212 132 3990abdf058e50795a57702ea19c9d2a "pdflatex"
   (generated)
   "firstlecture.aux"
   "firstlecture.log"
