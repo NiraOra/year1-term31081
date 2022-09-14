@@ -4,3 +4,4 @@
 #
 Record:
 - Monday (12/09): 1.1, 1.2 
+- Wednesday (14/09): 1.3
