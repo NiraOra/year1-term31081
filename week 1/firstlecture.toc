@@ -6,3 +6,4 @@
 \contentsline {subsection}{\numberline {1.5}The Inclusion-Exclusion Principle}{6}{}%
 \contentsline {subsection}{\numberline {1.6}Sets Proofs}{7}{}%
 \contentsline {subsection}{\numberline {1.7}Laws of Set Algebra}{8}{}%
+\contentsline {subsection}{\numberline {1.8}Generalised Set Operations}{9}{}%

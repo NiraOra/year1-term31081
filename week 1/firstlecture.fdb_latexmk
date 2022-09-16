@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1663312731 "/Users/niranjanaarunmenon/Desktop/Undergrad Course/First Year /Term 3 /Discrete Mathematics/term3-1081/week 1/firstlecture.tex" "firstlecture.pdf" "firstlecture" 1663312732
-  "/Users/niranjanaarunmenon/Desktop/Undergrad Course/First Year /Term 3 /Discrete Mathematics/term3-1081/week 1/firstlecture.tex" 1663312731 5828 e22655cd3d76ec30812fd63eb8e91ce4 ""
+["pdflatex"] 1663315096 "/Users/niranjanaarunmenon/Desktop/Undergrad Course/First Year /Term 3 /Discrete Mathematics/term3-1081/week 1/firstlecture.tex" "firstlecture.pdf" "firstlecture" 1663315097
+  "/Users/niranjanaarunmenon/Desktop/Undergrad Course/First Year /Term 3 /Discrete Mathematics/term3-1081/week 1/firstlecture.tex" 1663315096 6251 bfe56af942ab53a8546537b5de09b1b1 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1246382020 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1246382020 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
@@ -44,6 +44,7 @@
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1248133631 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1248133631 32362 179c33bbf43f19adbb3825bb4e36e57a ""
+  "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1248133631 32762 224316ccc9ad3ca0423a14971cfa7fc1 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1248133631 34694 ad62b13721ee8eda1dcc8993c8bd7041 ""
   "/usr/local/texlive/2022/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty" 1576624944 13807 952b0226d4efca026f0e19dd266dcc22 ""
@@ -75,9 +76,9 @@
   "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1647878959 4410336 7d30a02e9fa9a16d7d1f8d037ba69641 ""
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1661306408 2826441 12d1eb35fb558fb993dc66a32e4b5118 ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
-  "firstlecture.aux" 1663312732 907 0a7cc2976b1da4322ffce1dac68adb4e "pdflatex"
-  "firstlecture.tex" 1663312731 5828 e22655cd3d76ec30812fd63eb8e91ce4 ""
-  "firstlecture.toc" 1663312732 547 477a9bf0fa93e5385020cdf103eb76e0 "pdflatex"
+  "firstlecture.aux" 1663315097 1026 fb7ce77093267a59ab243eedab42d78d "pdflatex"
+  "firstlecture.tex" 1663315096 6251 bfe56af942ab53a8546537b5de09b1b1 ""
+  "firstlecture.toc" 1663315097 625 2a37bf10b288a30bf0405eae575c7a94 "pdflatex"
   (generated)
   "firstlecture.aux"
   "firstlecture.log"
