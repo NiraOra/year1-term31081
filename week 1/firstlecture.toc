@@ -5,3 +5,4 @@
 \contentsline {subsection}{\numberline {1.4}Set Operations}{5}{}%
 \contentsline {subsection}{\numberline {1.5}The Inclusion-Exclusion Principle}{6}{}%
 \contentsline {subsection}{\numberline {1.6}Sets Proofs}{7}{}%
+\contentsline {subsection}{\numberline {1.7}Laws of Set Algebra}{8}{}%
