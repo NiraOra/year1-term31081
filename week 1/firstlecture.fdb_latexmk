@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1663315096 "/Users/niranjanaarunmenon/Desktop/Undergrad Course/First Year /Term 3 /Discrete Mathematics/term3-1081/week 1/firstlecture.tex" "firstlecture.pdf" "firstlecture" 1663315097
-  "/Users/niranjanaarunmenon/Desktop/Undergrad Course/First Year /Term 3 /Discrete Mathematics/term3-1081/week 1/firstlecture.tex" 1663315096 6251 bfe56af942ab53a8546537b5de09b1b1 ""
+["pdflatex"] 1663550337 "/Users/niranjanaarunmenon/Desktop/Term 3 /Discrete Mathematics/term3-1081/week 1/firstlecture.tex" "firstlecture.pdf" "firstlecture" 1663550337
+  "/Users/niranjanaarunmenon/Desktop/Term 3 /Discrete Mathematics/term3-1081/week 1/firstlecture.tex" 1663550336 7808 07f97b59de28447e9558f2803a718b67 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1246382020 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1246382020 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
@@ -76,9 +76,9 @@
   "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1647878959 4410336 7d30a02e9fa9a16d7d1f8d037ba69641 ""
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1661306408 2826441 12d1eb35fb558fb993dc66a32e4b5118 ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
-  "firstlecture.aux" 1663315097 1026 fb7ce77093267a59ab243eedab42d78d "pdflatex"
-  "firstlecture.tex" 1663315096 6251 bfe56af942ab53a8546537b5de09b1b1 ""
-  "firstlecture.toc" 1663315097 625 2a37bf10b288a30bf0405eae575c7a94 "pdflatex"
+  "firstlecture.aux" 1663550337 1249 1084ec81c6c8c90a4ae8c96d69e5fbee "pdflatex"
+  "firstlecture.tex" 1663550336 7808 07f97b59de28447e9558f2803a718b67 ""
+  "firstlecture.toc" 1663550337 765 e1dda77269f6b2a12ae28b71663621f4 "pdflatex"
   (generated)
   "firstlecture.aux"
   "firstlecture.log"
