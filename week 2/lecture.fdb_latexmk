@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1664088756 "/Users/niranjanaarunmenon/Desktop/Term 3 /Discrete Mathematics/term3-1081/week 2/lecture.tex" "lecture.pdf" "lecture" 1664088756
-  "/Users/niranjanaarunmenon/Desktop/Term 3 /Discrete Mathematics/term3-1081/week 2/lecture.tex" 1664088755 11642 11c95556067f36d226325417308e1a8f ""
+["pdflatex"] 1664098504 "/Users/niranjanaarunmenon/Desktop/Term 3 /Discrete Mathematics/term3-1081/week 2/lecture.tex" "lecture.pdf" "lecture" 1664098505
+  "/Users/niranjanaarunmenon/Desktop/Term 3 /Discrete Mathematics/term3-1081/week 2/lecture.tex" 1664098504 12407 1da2356e2077dcba42c51cb25561ef0f ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1246382020 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1246382020 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
@@ -77,9 +77,9 @@
   "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1647878959 4410336 7d30a02e9fa9a16d7d1f8d037ba69641 ""
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1661306408 2826441 12d1eb35fb558fb993dc66a32e4b5118 ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
-  "lecture.aux" 1664088756 1842 6ef757c000d21bdbf44ddda40156cc46 "pdflatex"
-  "lecture.tex" 1664088755 11642 11c95556067f36d226325417308e1a8f ""
-  "lecture.toc" 1664088756 1153 c5281f50495c0473bb3b1c0f85c088eb "pdflatex"
+  "lecture.aux" 1664098505 1842 6ef757c000d21bdbf44ddda40156cc46 "pdflatex"
+  "lecture.tex" 1664098504 12407 1da2356e2077dcba42c51cb25561ef0f ""
+  "lecture.toc" 1664098505 1153 c5281f50495c0473bb3b1c0f85c088eb "pdflatex"
   (generated)
   "lecture.aux"
   "lecture.log"
