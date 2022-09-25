@@ -301,4 +301,36 @@ Range($\lceil x \rceil$) = $\mathbb{Z}.$
 [example in word]
 \newpage
 \subsection{Injective, Surjective, Bijective}
+Formal Definitions:
+\newline
+\newline
+Recall that if f is a function from X to Y , then   for every $x \in X$, there is exactly one $y \in Y$ such that $f(x) = y$.
+\newline
+\newline
+  1. We say that a function $f : X \rightarrow Y$ is injective or one-to-one if, for every $y \in Y$ , there is at most one $x \in X$ such that $f(x) = y$. 
+  \newline
+  Example: for all $x_1,x_2 \in X$, if $f(x_1) = f(x_2)$ then $x_1 = x_2$.  
+  \newline
+  \newline
+  2. We say that a function $f : X \rightarrow Y$ is surjective or onto if, for every $y \in Y$ , there is at least one $x \in X$ such that $f(x) = y$.
+  the range of f is the same as the codomain of f (range(f) = Y).
+  \newline
+  \newline
+  3. We say that a function $f : X \rightarrow Y$ is bijective if $f$ is both injective and surjective (one-to-one and onto).   
+  \newline
+  \newline
+  for every $y \in Y$ , there is exactly one $x \in X$ such that $f(x) = y$.
+  \newline
+  [example in word]
+  \newpage
+  \subsection{Composition of Functions}
+    For functions $f : X \rightarrow Y$ and $g : Y \rightarrow Z$, the composite of f and g is the function $g \circ f : X \rightarrow Z$ defined by $(g \circ f)(x) = g(f(x))$ for all $x \in X$.
+    \newline
+    \newline
+    The composite function $g \circ f$ exists whenever the range of f is a subset of the domain of g.
+    \newline
+    \newline
+    In general, $g \circ f$ and $f \circ g$ are not the same composite functions. Associativity of composition (assuming they exist): $h \circ (g \circ f) = (h \circ g) \circ f$.  
+  \newpage
+  \subsection{Identity and Inverse Functions}
 \end{document}

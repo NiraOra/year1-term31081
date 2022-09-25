@@ -12,3 +12,5 @@
 \contentsline {subsection}{\numberline {1.11}Functions}{12}{}%
 \contentsline {subsection}{\numberline {1.12}Image and Inverse Image}{13}{}%
 \contentsline {subsection}{\numberline {1.13}Injective, Surjective, Bijective}{14}{}%
+\contentsline {subsection}{\numberline {1.14}Composition of Functions}{15}{}%
+\contentsline {subsection}{\numberline {1.15}Identity and Inverse Functions}{16}{}%
