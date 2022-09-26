@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.8.24)  26 SEP 2022 23:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.8.24)  27 SEP 2022 00:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -556,7 +556,47 @@ Underfull \hbox (badness 10000) in paragraph at lines 433--460
 
  []
 
-[19] (./lecture.aux) ) 
+[19]
+Underfull \hbox (badness 10000) in paragraph at lines 468--491
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 468--491
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 468--491
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 468--491
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 468--491
+
+ []
+
+
+Overfull \hbox (3.20758pt too wide) detected at line 492
+\OT1/cmr/m/n/10 2)[]\OML/cmm/m/it/10 a[]c[]b[]c[]l \OMS/cmsy/m/n/10 ^^T \OML/cmm/m/it/10 c[]a[]b:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 492--497
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 492--497
+
+ []
+
+[20] (./lecture.aux) ) 
 Here is how much of TeX's memory you used:
  2138 strings out of 478268
  37525 string characters out of 5846347
@@ -566,10 +606,10 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  55i,8n,62p,361b,216s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on lecture.pdf (19 pages, 179105 bytes).
+Output written on lecture.pdf (20 pages, 182526 bytes).
 PDF statistics:
- 131 PDF objects out of 1000 (max. 8388607)
- 83 compressed objects within 1 object stream
+ 134 PDF objects out of 1000 (max. 8388607)
+ 85 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
