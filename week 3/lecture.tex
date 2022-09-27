@@ -499,7 +499,8 @@ Theorem:
 \newline
 \boxed{\text{For all positive integers $a$ and $b$; gcd}(a,b) x \text{ lcm }(a,b) = ab.}
 \newpage
-\subsection{Quotient and Remainder}
+\subsection*{Quotient and Remainder}
+\
 [mostly in word]
 \newline
 \newline
@@ -512,5 +513,64 @@ $$a = bq + r	\text{ and }	0 \le r < b.$$
 \newline
 \boxed{\text{ Note: $q$ can be found using floor function; $q = \lfloor a / b \rfloor.$; then $r = a - qb$.}}
 \newpage
-\subsection{}
+\subsection{The Euclidean Algorithm}
+\
+[mostly in word]
+\newline
+\newline
+\boxed{\text{If $a = bq + r$ then gcd$(a,b) =$ gcd$(b,r)$.}}
+\newline
+\newline
+\underline{The Euclidian Algorithm: General Case [steps]}
+\newline
+\newline
+$1)$	Let $a$ and $b$ be integers with $a > b \geq 0.$
+\newline
+$2)$	If $b = 0$, then gcd$(a,b) = a.$
+\newline
+$3)$	If $b > 0$, use the Quotient-Remainder theorem to write $a = bq + r$ where $0 \leq r < b$.	Then by our prevous result, gcd$(a,b) =$ gcd$(b,r).$
+\newline
+$4)$	Repeat steps 2 and 3 to find gcd$(b,r)$.
+\newline
+\newline
+Example: Find gcd$(708, 540)$
+$$708 = 540 \cdot 1 + 168,$$
+$$540 = 168 \cdot 3 + 36,$$
+$$168 = 36 \cdot 4 + 24,$$
+$$36 = 24 \cdot 1 + 12,$$ 
+$$24 = 12 \cdot 2 + 0.$$
+So,
+$$\text{gcd }(708,540) = 12.$$
+\boxed{\text{Note: gcd is the last non-zero remainder.}}
+\newline
+\newline
+\underline{Bezout's Identity}
+\newline
+\newline
+For $a,b \in Z$ not both zero, there exist integers $x$ and $y$ (not unique) such that:
+\newline
+\newline
+\boxed{ \text{gcd }(a,b) = ax + by.}
+\newline
+\newline
+\boxed{\text{Theorem: Integers $a$ and $b$ are relatively prime if and only if there exists $x,y \in Z$ such that $ax + by = 1$.}}
+\newline
+\newline
+\underline{Extended Euclidean Theorem:}
+The Extended Euclidean Algorithm is a more efficient way of finding the numbers in Bézout's Identity: In looking for gcd(a,b), assume a > b > 0.
+\newline
+1. We make up a table with five columns labelled $i, q_i, r_i, x_i, y_i$, where $i$ labels the rows.
+\newline
+2. We set row $1$ to be $1,0,a,1,0$ and row $2$ to be $2,0,b,0,1.$
+Thus $q_1 = q_2 = 0; r_1 = a, r_2 = b; x_1 = y_2 = 1; x_2 = y_1 = 0.$
+\newline
+3. Then for $i$ from $3$ onwards, $q_i$ is the quotient on dividing $r_{i-2}$ by $r_{i-1}$ ($a$ divided by $b$ in the first case).
+\newline
+4. Then subtract $q_i$ times the rest of row $i - 1$ from row $i - 2$.
+\newline
+5. Repeat until we get $r_{n+1} = 0$ for some $n$, then stop.
+Then the gcd is $r_n$ and $r_n = ax_n + by_n$, that is the last row before $r_i$ was zero gives the gcd, the $x$ and the $y$.
+\newline
+In fact a similar identity holds at each step: $r_i = ax_i + by_i$.
+\newpage
 \end{document}

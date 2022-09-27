@@ -19,5 +19,4 @@
 \contentsline {subsection}{\numberline {2.1}Numbers and Divisibility}{18}{}%
 \contentsline {subsection}{\numberline {2.2}Primes}{19}{}%
 \contentsline {subsection}{\numberline {2.3}Common Divisors and Multiples}{20}{}%
-\contentsline {subsection}{\numberline {2.4}Quotient and Remainder}{21}{}%
-\contentsline {subsection}{\numberline {2.5}}{22}{}%
+\contentsline {subsection}{\numberline {2.4}The Euclidean Algorithm}{22}{}%
