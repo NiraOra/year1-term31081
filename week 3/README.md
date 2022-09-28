@@ -5,3 +5,4 @@
 Record:
 - Monday (26/09): 2.01, 2.02, 2.03, 2.04
 - Tuesday (27/09): 2.05
+- Wednesday (28/09): 
