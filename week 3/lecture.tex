@@ -581,5 +581,37 @@ Let $m \geq 2$ be an integer. We say that a and b are congruent modulo $m$ if $m
 \newline
 We write this as:
 $$a \cong b (mod m).$$
-
+The reason we have taken our modulus m to be greater than $2$ is that
+\newline
+1)	As $m | (a - b)$ iff $- m | (a - b)$, there is nothing to be gained from using negative moduli.
+\newline
+2)	All numbers are congruent modulo $1$, so that is not interesting.
+\newline
+3)	divisibility by $0$ is not defined.
+\newline
+\newline
+\underline{Theorem}
+\newline
+For integers $a, b$and $m, a \cong b (mod m)$ if and only if there is an integer $k$ such that $a = b + km$.
+\newline
+\newline
+\underline{Arithmetic with Congrences}
+\newline
+Suppose $a \cong b (mod m)$ and $c \cong d (mod m)$.
+\newline
+Then
+$$(1a) (a + c) \cong (b + d) (mod m).$$
+$$(1b) (a - c) \cong (b - d) (mod m).$$
+$$(2)	ac \cong bd (mod m).$$
+$$(3)	an \cong bn (mod m) for all n \in N.$$
+$$(4)	If k \text{ | } m then a \cong b (mod k).$$
+\boxed{note: never divide congruences}
+\newline
+\newline
+Applications of Congruence Arithmetic:
+\newline
+1. Pseudo-random Numbers
+\newline
+2. Equations with no solutions
+\newpage
 \end{document}
