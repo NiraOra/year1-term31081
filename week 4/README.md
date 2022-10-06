@@ -4,3 +4,4 @@
 #
 Record:
 - Wednesday (05/10): 3.01, 3.02
+- Thursday (06/10): 3.03

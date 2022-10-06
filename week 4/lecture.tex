@@ -648,13 +648,13 @@ Example: $\frac{1}{1000} - \frac{1}{1001} < \frac{1}{1000000}.$
 \newline
 1. Common denominator (simple answer); 
 \newline
-2. Reciprocals; 1/2a < 1/a kinda way (bigger denominator smaller fractions)
+2. Reciprocals; 1/2a $<$ 1/a kinda way (bigger denominator smaller fractions)
 \newline
 3. Simplify
 \newline
 \newline
 \textbf{Proof}. We have
-$$\frac{1}{1000} - \frac{1}{1001} = \frac{1001 - 1000}{1000 x 1001} = \frac{1}{1001000}$$
+$$\frac{1}{1000} - \frac{1}{1001} = \frac{1001 - 1000}{1000 \text{ x } 1001} = \frac{1}{1001000}$$
 But $1001000 > 1000000$, and both are positive numbers, so
 $$\frac{1}{1001000} < \frac{1}{1000000}$$  
 Therefore
@@ -664,4 +664,37 @@ $$\frac{1}{1000} - \frac{1}{1001} < \frac{1}{1000000}.$$
 \newline
 \newline
 Equality proofs should ideally not be proved by calculators!
+\newpage
+\subsection{Further Examples fo Proofs}
+Another example: 
+\newline
+Example: $\sqrt[8]{8!} < \sqrt[9]{9!}$.
+\newline
+[rough working]
+$$=> 8! < \sqrt[9]{9! ^ 8},$$
+$$=> (8!)^ 9 < (9!)^ 8, $$
+$$=> (1 \times 2 \times \dots \times 8)^9 < (1 \times 2 \times \dots \times 9)^8, $$
+$$=> (1 \times 2 \times \dots \times 8)^9 < (1 \times 2 \times \dots \times 8)^8 \times 9^8,$$
+$$=> 1 \times 2 \times \dots \times 8 < 9^8.$$
+which is obviously less than 9 times 9 times etc, therefore making the statement true.
+\newline
+\newline
+However, you can't start like this. Ie, you have to start with the fact that is true, then ending up with the question.
+\newline
+You have to check if it can be reversed (ie reversing steps in a proof: is that possible?).
+\newline
+(in this case, you can reverse it: proof in word.)
+\newline
+\newline
+\textbf{ Things to learn from this proof:}
+\newline
+\newline
+$\bullet$ Go back to definitions (expand the definition)
+\newline
+$\bullet$ Simplify!
+\newline
+$\bullet$ A proof is often discovered by working backwards; but it must often be written forwards.
+\newline
+$\bullet$ Explain logical and technical steps in words (with punctuation!)
+\newpage
 \end{document}
