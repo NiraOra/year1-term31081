@@ -2,7 +2,8 @@
 \usepackage{amsmath,amsthm,amsfonts}                        % AMS Math
 \usepackage{thmtools}                                       % Theorem Tools
 \usepackage{bm}        
-\usepackage{tabto}                                          % Bold Math
+\usepackage{tabto}   
+\newtheorem{theorem}{Theorem}                                       % Bold Math
 
 \title{MATH1081 notes}
 \author{Nira (z5417727)}
@@ -765,4 +766,56 @@ $$\text{ Suppose that $A$ is true } \dots \text{ Therefore $B$ is true.}$$
 $\bullet$ Expand the definition
 \newline
 $\bullet$ Keep aim in mind!!! Find general steps, substitute, reduce where necessary.
+\newpage
+\subsection{Writing Proofs}
+[proofs in word]
+$\bullet$ Usually involves two stage:
+\newline
+1. Discover reasons why statement is true
+\newline
+2. present these reasons as a coherent, carefully written argument.
+\begin{theorem}
+  Let n be an integer. If $n$ is even, then $n^2$ is even.
+  \newline
+    $\bullet$ use a basic idea to prove it (for example, $n = 2k$, so $n^2 = 4k^2)$.
+\end{theorem}
+$\text{ }$
+\newline
+\textbf{Things to learn from proof}
+\newline
+$\bullet$ Written in complete sentences, with correct spelling and grammar!
+\newline
+$\bullet$ Sentence should begin with a word, not a variable/number.
+\newline
+$\bullet$ In text, writing equations consequtively with no words between them can make it unclear.
+\newline
+\newline
+\boxed{\text{ Bad Practice: Let } n = 2k, k \in \mathbb{Z}.}
+\newline
+\newline
+\boxed{\text{ Good practice: Let } n = 2k, \text{ where } k \in \mathbb{Z}.}
+\newline
+\newline
+\textbf{Structure of a Proof}
+\newline
+$\bullet$ Begin with a clear statement.
+\newline
+$\bullet$ Write the word "Proof"; then begin argument.
+\newline
+$\bullet$ Any notation used; introduce variables properly.
+\newline
+$\bullet$ Logic of the proof should be clear.
+\newline
+$\bullet$ Include a conclusion that indicates end. Can include "QED" but not necessary.  
+\newline
+\newline
+\textbf{Helping the reader}
+\newline
+$\bullet$ Give reasons for all conclusions. 
+\newline
+$\bullet$ Helpful to explain technical and algebraic steps. 
+\newline
+$\bullet$ Need to make comments about variables being integers, etc.
+\newline
+$\bullet$ Try to the get the level of the argument right.
 \end{document}
