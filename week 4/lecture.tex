@@ -1049,4 +1049,36 @@ $\bullet $ Another example of "proof by exhaustion" of cases.
 \newline
 $\bullet $ Expand the defintion!!
 \newpage
+\subsection{Multiple quantifiers continued (limits)}
+\begin{theorem}
+  $\lim_{x \to \infty} \frac{4x^2 + 7x + 19}{2x^2 + 3} = 2.$
+\end{theorem}
+\textbf{Note: } According to definition of a limit, we must show that for every $\epsilon > 0, \exists$ a real number $M$ such that
+$$\text{if } x > M \text{ then } \arrowvert \text{ } \frac{4x^2 + 7x + 19}{2x^2 + 3} - 2 \text{ } \arrowvert < \epsilon.$$
+\textbf{Proof: } Let $x > 0.$
+\newline
+Choose $M = $ max$(1, \frac{10}{\epsilon}).$
+\newline
+Let $x > M. $ Then
+$$x > 1 \text{ and } x > \frac{10}{\epsilon}.$$
+so
+\newline
+$$\arrowvert \text{ } \frac{4x^2 + 7x + 19}{2x^2 + 3} - 2 \text{ } \arrowvert = \arrowvert \text{ } \frac{7x + 13}{2x^2 + 3} \text{ } \arrowvert,$$
+$$ = \frac{7x + 13}{2x^2 + 3},$$
+$$ < \frac{7x + 13}{2x^2} \text{ (because $x > 1$)},$$
+$$ = \frac{10}{x},$$
+$$ = \frac{10}{\frac{10}{\epsilon}} \text{ (since $x = \frac{10}{\epsilon}$)},$$
+$$ = \epsilon.$$
+Therefore, $\lim_{x \to \infty} \frac{4x^2 + 7x + 19}{2x^2 + 3} = 2.$
+\newline
+\newline
+\underline{Things to learn from proof:}
+\newline
+$\bullet $ Expand definition!!
+\newline
+$\bullet $ Logical structure of statement to be proved is: "for all \dots there exists \dots such that if \dots then \dots",
+and proof follows structure properly. 
+\newline
+$\bullet $ Working backwards is very important!!
+\newpage
 \end{document}
