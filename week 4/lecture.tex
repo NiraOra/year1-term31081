@@ -995,4 +995,58 @@ $\bullet $ show there cannot be two diff objects with property. Common proof pat
 \newline
 $\bullet $ Clearly distinguish the "existence" and "uniqueness" parts of the proof.
 \newpage
+\subsection{Multiple Quantifiers}
+$\bullet $ The words "all" and "some" -> quantifiers. A statement can have more than one quantifier.
+\newline
+\newline
+\textbf{Examples:}
+\newline
+$\bullet $ For every $x \in \mathbb{Z}, \exists y \in \mathbb{Z}$ such that $y > x$.
+\newline
+$\bullet $ $\exists y \in \mathbb{Z}$ such that for every $x \in \mathbb{Z}, y > x.$ (not the same as the first statement.)
+\newline
+$\bullet $ $2^29 - 1$ is composite. (rewrite: $2^29 - 1 = ab$ where $a > 1, b > 1$ for some integers $a, b$.)
+\newline
+$\bullet $ For any prime there is a larger prime.
+\newline
+$\bullet $ $(6, -1, 5)$ is a linear combination of $(1, 1, 2)$ and $(1, 2, 3).$
+\newline
+$\bullet $ There is a function $f: \mathbb{R} \rightarrow \mathbb{R}$ which is equal to its own derivative.
+\newline
+$\bullet $ Every positive real number has a real square root.
+\newline
+$\bullet $ For all $A, B, C \subseteq U, A \cup (B \cup C) = (A \cup B) \cup C.$
+\newline
+$\bullet $ The function $f : X \rightarrow Y$ is onto.
+\newline
+\newline
+\begin{theorem}
+  Any composite positive integer has a factor greater than $1$ and less than or equal to its square root.
+\end{theorem}
+Note: Making the quantifiers explicit, the statement is: 
+\newline
+\newline
+\boxed{\text{"for every composite integer $n \text{ }\exists \text{ } c,$ a factor of $n$ such that $c > 1$ and $c \leq \sqrt{n}$".}}  
+\newline
+\newline
+Let $n$ be composite.
+\newline
+$$n = ab, a > 1, b > 1.$$
+Case $I: a \leq \sqrt(n)$
+$$c = a, \text{ has required properties}.$$
+Case $II: a > \sqrt{n}$
+$$c = b; b = \frac{n}{a} < \frac{n}{\sqrt{n}} = \sqrt{n}.$$
+Therefore, $c \arrowvert n, 1 < c \leq \sqrt{n}.$
+\newline
+\newline
+\underline{ Things to learn from proof: }
+\newline
+$\bullet $ Rewrite the given statement if necessary to make the quantifiers clear.
+\newline
+$\bullet $ Patter of "all" proof: within this, patter of "existence" proof.
+\newline
+$\bullet $ Another example of "proof by exhaustion" of cases.
+\newline
+$\bullet $ Expand the defintion!!
+\newpage
 \end{document}

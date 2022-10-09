@@ -31,3 +31,4 @@
 \contentsline {subsection}{\numberline {3.7}Converse; If and Only if}{32}{}%
 \contentsline {subsection}{\numberline {3.8}"Some" Statements}{33}{}%
 \contentsline {subsection}{\numberline {3.9}"Some" statements confused}{34}{}%
+\contentsline {subsection}{\numberline {3.10}Multiple Quantifiers}{35}{}%
