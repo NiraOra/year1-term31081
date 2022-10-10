@@ -1,0 +1,1084 @@
+\documentclass{article}
+\usepackage{amsmath,amsthm,amsfonts}                        % AMS Math
+\usepackage{thmtools}                                       % Theorem Tools
+\usepackage{bm}        
+\usepackage{tabto}   
+\newtheorem{theorem}{Theorem}                                       % Bold Math
+
+\title{MATH1081 notes}
+\author{Nira (z5417727)}
+\date{September 17th, 2022}
+\begin{document}
+\maketitle 
+\tableofcontents
+\newpage
+\section{Topic 1}
+\subsection{Introduction}
+1. addition, multiplication, division and subtraction
+\newline
+2. Mainly dealing with finite sets
+
+\newpage
+\subsection{Sets and subsets}
+\boxed{ $\text{A set is a well defined collection of distinct objects}$ }
+\newline
+\newline
+Example: $S = \{1, a, 3\}, A =\{\Pi, 1\}.$
+\newline
+1. $e \notin A$; it is not in A
+\newline
+2. For example, if A is a set of all integers; $\{ \text{all even integers} \}$
+    = $\{n \in \mathbb{R} | \text{n is even}\}$.
+\newline
+3. We can remove superfluos items (elements that occur more than one).
+$A = \{ 1, 2, 3, 3 \}$ where $3$ can be removed.
+\newline
+\newline
+\newline
+Example:
+\newline
+$A = \{ 1, 2, 3 \},
+B = \{2, 3, 1 \}, 
+C = \{1, 2, 3, 3 \},
+D = \{ 1 , 3 \}.$
+\newline
+Here, D is a proper subset of A, B, C; A, B, C are supersets of D.
+\newline
+\boxed {$$\subseteq: \text{Subset (proper subset)}, $$
+$$ \supseteq: \text{Superset}.$$}
+\newline
+\newline
+1. To prove if a set is a proper subset; do the following:
+\newline
+For example, if $D \in A$, then check if $e \in D$
+\newline
+If $e \in D,$ then $e \in A$.
+Thus, it would be a proper subset (here, e is just an element).
+\newline
+\newline
+2. To prove that two sets are equal;
+\newline
+For example, if A = B, prove:
+\newline
+i) $A \subseteq B$; if an element is in A, then the element is in B.
+\newline
+ii) $B \subseteq A$; if an element is in B, then the element is in A.
+\newpage
+\subsection{Power Sets and Stability}
+Subsets of $A = \{1, 2, 3\} $:
+\newline
+1. Could throw everything out to get empty set $\Phi$,
+\newline
+2. One element each: $\{ 1 \}, \{ 2 \}, \{ 3 \}$,
+\newline
+3. Two elements: $\{ 1, 2 \}, \{ 2, 3 \}, \{ 1, 3 \}$,
+\newline
+4. Set itself: $A$.
+\newline
+The set containing 1, 2, 3, 4 is called the powerset of A.
+\newline
+\newline
+Given $
+A = \{1, 2, 3\}, B = \{1, 2, 3, 3\}, C = \{1, 3\}, D = \{1, 3\}$, where \newline
+$A = B$, $C \subseteq A, B$ and $D \not \subseteq A, B, C$.
+\newline
+1. size of A = 3, B = 3, C = 2, D = 2.
+\newline
+[Exercise with A  = {0, 1, {0, 1}}, B done in word].
+\newpage
+\subsection{Set Operations}
+Boolean Operators ("not" operation in programming): 
+\newline
+1. Complement:
+\newline
+Let there be a set A in U (A: all of the people in the video, U: universal set of everyone in the world, $A^c =$ complement of A).
+\newline
+\newline
+\boxed { $$A^c = \{ x \in U | x \not \in A \}.$$}
+\newline
+\newline
+2. Intersecting ("and" operation in programming):
+\newline
+If there is $A, B$, intersecting, 
+\newline
+\newline
+\boxed{ $$A \cap B = \{ x \in A | x \in B\}.$$}
+\newline
+\newline
+3. Union ("or" operation in programming):
+If there is $A, B$, A or B is:
+\newline
+\newline
+\boxed{ $$A \cup B = \{ x \in U | x \in A \text { or } x \in B\}.$$}
+\newline
+\newline
+4. Difference:
+If there is $A, B$, intersecting, 
+\newline
+\newline
+\boxed{ $$A - B = \{ x \in A | x \in B \}.$$}
+\newline
+\newline
+[examples in word doc]
+\newpage
+\subsection{The Inclusion-Exclusion Principle}
+[example in Word]
+\newline
+\boxed{ $$|A \cup B| = |A| + |B| - | A \cap B|$$.}
+\newline
+\newline
+For three elements, 
+\newline
+\newline
+\boxed{ $$|A \cup B \cup C| = |A| + |B| + |C| - | A \cap B| - |A \cap C| - |B \cap C| + |A \cap B \cap C|$$.}
+\newline
+\newline
+[example in word]
+\newpage
+\subsection{Sets Proofs}
+[proof question in word]
+\newline
+Hints for proofs:
+\newline
+1. To prove that $S \subseteq T$, we can assume that $x \in S$ and show that $x \in T$.
+\newline
+2. 
+To prove that $S = T$, we can show that $S \subseteq T$ and $T \subseteq S$.
+\newline
+\newline
+Scaffold: 
+\newline
+\boxed{ \text{Proof: Suppose that \dots 
+\newline
+\dots (proof)
+\newline
+we see that/ it follows \dots (conclusion) (end with shaded box to indicate end of proof.)}}
+\newline
+\newline
+Note that the "Suppose that" part of the proof is usually whatever the if statment mentions.
+\newline
+\newline
+For example, if the question is "Prove that if $A \cap B = A$, then $A \cup B = B$, then the proof starts like this:
+\newline
+\boxed{\underline{Proof}: \text{ Suppose that } A \cap B = A. }
+\newline
+For questions like "is this statement true", there are two ways to approach the question:
+\newline
+1. If the statement is true (if you think it is true), then prove it.
+\newline
+2. If the statement is false, then give a counter-example that proves it false. 
+\newline
+[examples in word]
+\newpage
+\subsection{Laws of Set Algebra}
+\underline{ Laws of Set Algebra}
+\newline
+$$1\text{. } A \cap B = B \cap A: \text{ Commutative Law}.$$
+$$2\text{. } A \cap \text{(} B \cap C \text{)} = \text{(} A \cap B \text{)} \cap C: \text{ Associative Law}.$$
+$$3\text{. } A \cap \text{(} B \cap C \text{)} = \text{(} A \cap B \text{)} \cup \text{(} A \cap C \text{)}: \text{ Distributive Law}.$$
+$$4\text{. } A \cap \text{(} A \cap B \text{)} = A: \text{ Absorption Law}.$$
+$$5\text{. } A \cap U = U \cap A = A: \text{ Identity Law}.$$
+$$6\text{. } A \cap A = A: \text{ Idempotent Law}.$$
+$$7\text{. } (A^c)^c = A: \text{ Double Complement Law}.$$
+$$8\text{. } A \cap \emptyset = \emptyset \cap A = \emptyset: \text{ Domination Law}.$$
+$$9\text{. } A \cap A^c = \emptyset: \text{ Intersection with Complement Law}.$$
+$$10\text{. } (A \cup B)^c = A^c \cap B^c: \text{ De Moirve's Law}.$$
+The intersection can be swapped with the union to form another law (like, $A \cup B = B \cup A$ swapped as $A \cap B = B \cap A.$). Similarily, $U$ should be swapped with $\emptyset$ and vice versa.
+\newline
+[examples in word]
+\newpage
+\subsection{Generalised Set Operations}
+Unions and Intersections; A saga:
+$$1 \text{. } \cup_{i=1}^{n}A_i = A_1 \cup A_2 \cup \dots \cap A_n,$$
+$$2 \text{. } \cap_{i=1}^{n} A_i = A_1 \cap A_2 \cap \dots \cap A_n.$$
+Example:
+\newline
+\newline
+$$A_k = {k, k + 1};$$
+$$= \cup_{i=1}^{3}A_k = A_1 (\{1, 2\}) \cup A_2 (\{2, 3\}) \cup A_3 (\{3, 4\}),$$
+$$= \{1, 2, 3, 4\}.$$
+[example in word]
+\newpage
+\subsection{Russel's Paradox}
+A set may contain another set as one of its elements.
+\newline
+This raises the possibility that a set may contain itself as an element.
+\newline
+\newline
+\textbf{Problem: Try to let S be the set of all sets that are not elements of themselves, i.e.,}
+$\mathbf{S = \{ A | A }\textbf{ is a set and } \mathbf{A \not\in A \}}.$
+\newline
+\textbf{Is S an element of itself?}
+\newline
+i)	If $S \in S$, then the definition of S implies that $S \not \in S$, a contradiction.
+\newline
+ii)	If $S \not \in S$, then the definition of S implies that $S \in S$, also a contradiction.
+Hence neither $S \in S$ nor $S \not \in S$. This is Russell’s paradox.
+\newpage
+\subsection{Cartesian Product}
+[example in word]
+\newline
+The Cartesian product of two sets A and B, denoted by $A \times B$, is the set of all ordered pairs from A to B:
+\newline
+\newline
+\boxed{A \times B = \{(a,b)|a \in A \text{ and } b \in B\}}
+\newline
+\newline
+If $|A| = m$ and $|B| = n$, then we have $|A \times B| = mn$.
+\newline
+\newline
+Sets with more than 2 elements:
+\newline
+\newline
+\textbf{Example:} $A = \{ a, b \}, B = \{ 1, 2, 3 \}.$
+$$\text{Cartesian Product }(A \times B) = \{(a, 1), (a, 2), (a, 3), (b, 1), (b, 2), (b, 3)\}$$
+(all of the ordered pairs -- combinations)
+\newline
+\newline
+[example in word]
+\newline
+\newline
+When X and Y are small finite sets, we can use an arrow diagram to represent a subset S of $X \times Y$ : we list the elements of X and the elements of Y , and then we draw an arrow from x to y for each pair $(x,y) \in S$.
+\newpage
+\subsection{Functions}
+Example: Take 2 sets $X$ and $Y$, for which we have to find a function.
+$$X = \{\text{all MATH 1081 students} \}, Y = \{ 0, 1, \dots , 84, 85, \dots, 100\}.$$
+X: number of students; Y: marks from $0 - 100$.
+\newline
+Take function $f: X \to Y; \text{where } X \text{ is the domain and } Y \text{ is the co domain}.$
+\newline
+Ie, $f(x)$ = X's mark (Y).
+\newline
+Function $f: X \to Y$ satisfies $\{ (x, f(x)) | x \in X\} \subseteq X \times Y \text{ so that, for each } x \in X$;
+\newline
+1. $f(x)$ exists
+\newline
+2. $f(x)$ is unique
+\newline
+\newline
+[example in word]
+\newline
+\newline
+\boxed{\text{Note: be vary of the one-to-one function property lol}}
+\newline
+\newline
+\underline{ Floor function and ceiling functions:}
+\newline
+\newline
+1. Floor function (rounds down; smallest integer):
+\newline
+\newline
+\boxed{\lfloor x \rfloor = \text{ max } \{ z \in Z | z \leq x\}.}
+\newline
+\newline
+2. Ceiling function (rounds up; largest integer):
+\newline
+\newline
+\boxed{\lceil x \rceil = \text{ min } \{ z \in Z | z \geq x\}.}
+\newline
+\newline
+[example in word]
+Domain/codomain: $\lfloor x \rfloor / \lceil x \rceil: \mathbb{R} \to \mathbb{Z}.$
+\newline
+\newline
+Range($\lceil x \rceil$) = $\mathbb{Z}.$
+\newline
+\newline
+[example in word]
+\newpage
+\subsection{Image and Inverse Image}
+- The image of a set $A \subseteq X$ under a function $f : X \rightarrow Y \text{ is } f(A) = \{ y \in Y \text{ | } y = f(x) \text{ for some } x \in A\} = \{f(x)|x \in A\}$.
+\newline
+\newline
+- The inverse image of a set $B \subseteq Y$ under a function $f : X \rightarrow Y is f^{-1}(B) = \{ x \in X |f(x) \in B \}$.
+\newline
+\newline
+(image is just function values in the doman and inverse image is function values in range).
+\newline
+\newline
+\boxed{\text{note: this is just function and inverse functions.}}
+\newline
+\newline
+[example in word]
+\newpage
+\subsection{Injective, Surjective, Bijective}
+Formal Definitions:
+\newline
+\newline
+Recall that if f is a function from X to Y , then   for every $x \in X$, there is exactly one $y \in Y$ such that $f(x) = y$.
+\newline
+\newline
+  1. We say that a function $f : X \rightarrow Y$ is injective or one-to-one if, for every $y \in Y$ , there is at most one $x \in X$ such that $f(x) = y$. 
+  \newline
+  Example: for all $x_1,x_2 \in X$, if $f(x_1) = f(x_2)$ then $x_1 = x_2$.  
+  \newline
+  \newline
+  2. We say that a function $f : X \rightarrow Y$ is surjective or onto if, for every $y \in Y$ , there is at least one $x \in X$ such that $f(x) = y$.
+  the range of f is the same as the codomain of f (range(f) = Y).
+  \newline
+  \newline
+  3. We say that a function $f : X \rightarrow Y$ is bijective if $f$ is both injective and surjective (one-to-one and onto).   
+  \newline
+  \newline
+  for every $y \in Y$ , there is exactly one $x \in X$ such that $f(x) = y$.
+  \newline
+  [example in word]
+  \newpage
+  \subsection{Composition of Functions}
+    For functions $f : X \rightarrow Y$ and $g : Y \rightarrow Z$, the composite of f and g is the function $g \circ f : X \rightarrow Z$ defined by $(g \circ f)(x) = g(f(x))$ for all $x \in X$.
+    \newline
+    \newline
+    The composite function $g \circ f$ exists whenever the range of f is a subset of the domain of g.
+    \newline
+    \newline
+    In general, $g \circ f$ and $f \circ g$ are not the same composite functions. Associativity of composition (assuming they exist): $h \circ (g \circ f) = (h \circ g) \circ f$.  
+\newline
+\newline
+\textbf{ Example: Take sets $X = \{\text{ all MATH1081 students }\}, Y = \{ 0, 1, \dots, 100 \}, Z = \{F, P, CR, D, HD\}.$  }
+\newline
+\newline 
+Maps: $f = X \rightarrow Y; g = Y \rightarrow Z.$
+\newline
+\newline
+A) $g \circ f: X \rightarrow Z.$
+\newline
+$(f \circ g) (y) = f(g(y)).$
+\newline
+[examples in word]
+\newpage
+\subsection{Identity and Inverse Functions}
+\underline{ Identity Function:}
+\newline
+\newline
+\boxed{i_x: x \rightarrow x; i_x(x) = x.}
+\newline
+\newline
+For any function $f : X \rightarrow Y$ , we have $f \circ i_x = f = i_y \circ f$.   A function $g : Y \rightarrow X$ is an inverse of $f : X \rightarrow Y$ if
+$g(f(x)) = x$ for all $x \in X$ and $f(g(y)) = y$ for all $y \in Y$,
+\newline
+or equivalently, $g \circ f = i_x$ and $f \circ g = i_y$ .
+\newline
+\newline
+\boxed{\text{1. A function can have at most one inverse.}}
+\newline
+\newline
+If $f : X \rightarrow Y$ has an inverse, then we say that $f$ is invertible, and we denote the inverse off by $f^{-1}$. Thus,$f^{-1} \circ f = i_x$ and $f \circ f^{-1} = i_y$.
+\newline
+\newline
+If $g$ is the inverse of $f$, then $f$ is the inverse of $g$. Thus, $(f^{-1})^{-1} = f$.
+\newline
+\newline
+[example in word]
+\newpage
+\subsection{Inverse Function Proofs}
+\underline{ Theorem and Proof: }
+\newline
+\newline
+\boxed{1. \text{ A function } f: X \rightarrow Y \text{ has at most 1 inverse} }
+\newline
+\newline
+Proof:
+\newline
+\newline
+$$\text{ Let } g_1, g_2: Y \rightarrow X \text{ be inverse of }f.$$
+$$\text{ Then }: g_1 = g_i \circ i_y$$
+$$ = g_i \circ (f \circ g_2)$$
+$$ = (g_i \circ f) \circ g_2$$
+$$ = i_x \circ g_2$$
+$$ = g_2 \text{ End of proof }.$$
+[example in word]
+\newpage
+\section{Number Theory and Relations}
+\subsection{Numbers and Divisibility}
+[topic 2 done in word (SteelsSlides1): maybe put in definitions here ?? that depends]
+\newline
+\newline
+Number Set Notation:
+\newline
+\newline
+1. The positive integers: $\mathbb{Z}^+ = \{ 1, 2, 3, \dots\},$
+\newline
+2. The natural numbers: $\mathbb{N} = \{ 0, 1, 2, 3, \dots\},$
+\newline
+3. The integers: $\mathbb{Z} = \{\dots, -2, -1, 0, 1, 2, \dots\},$
+\newline
+4. The rational numbers: $\mathbb{Q} = \{ m/n : m \in \mathbb{Z}, n \in \mathbb{Z}^+ \},$
+\newline
+5. The real numbers, $\mathbb{R}$ and the complex numbers $\mathbb{C}.$
+\newline
+\newline
+Tests (Divisibility):
+\newline
+\newline
+1. $2\text{ | } N$ if and only if the decimal expansion of N ends in an even integer
+\newline
+2. $5 \text{ | } N$ if and only if the last decimal digit of N is 5 or 0.
+\newline
+3. $3 \text{ | } N$ if and only if the sum of the decimal digits of N is divisible by 3.
+\newline
+3': $9 \text{ | } N$ if and only if the sum of the decimal digits of N is divisible by 9.
+\newline
+4. $11 \text{ | } N$if the alternating sum of the decimal digits of N is divisible by 11. 
+\newline
+(example: $1232 = 1 - 2 + 3 - 2 = 0$)
+\newline
+\newline
+[proof in word]
+\newpage
+\subsection{Primes}
+[in word]
+\newline
+\newline
+\underline{Primes Definition: Formal:}
+Another way of saying this is if $p$ is prime:
+$$x \text{ | } p	\text{ implies }	x \in \{ -1,1,-p,p \}$$.
+\newline
+\newline
+\underline{Theorems:}
+\newline
+\newline
+1. If p is prime and $p | ab$, then $p | a$ or $p | b$,
+\newline
+2. If n is composite, then it has a prime factor less than or equal to $\sqrt[2]{n}$,
+\newline
+3. If no prime less than or equal to $\sqrt[2]{n}$ divides $n$ then $n$ is a prime,
+\newline
+4. Every integer $n \geq 2$ can be written uniquely as a product of a finite number of primes in increasing order i.e. $n = p_1^{m_1} * p_2^{m_2} \dots p_k^{m_k}$
+for primes $p_1 < p_2 < \dots < p_k$ and exponents $m_1,m_2, \dots ,m_k \in \mathbb{Z}^+$.
+\newline
+\newline
+Open Results about Primes:
+\newline
+\newline
+1. A prime of the form $2^n + 1$ is called a Fermat prime.
+\newline
+2. A prime of the form $2^{n} - 1$ is called a Mersenne prime.
+\newline
+3. Two primes that differ by 2, are called twin primes.
+For example, $3$ and $5$ are twin primes; so are $29$ and $31$.
+\newline
+4. The Goldbach Conjecture is that they are: it has been proved true for all numbers with fewer than about $17$ digits.
+\newpage
+\subsection{Common Divisors and Multiples}
+[mostly on word]
+\newline
+All $a,b \in \mathbb{Z}$ have (at least) one common divisor, namely $1$, and so we can define the following:
+\newline
+For $a,b \in \mathbb{Z}$, not both zero, the positive integer d such that
+$$1.	d \text{ | } a and d \text{ | } b,$$
+$$2.	If c \text{ | } a and c \text{ | } b then c \le d.$$
+is called the greatest common divisor of $a$ and $b$.
+We write $d = gcd(a,b)$.
+\newline
+\newline
+\boxed{ \text{ Begin by writing $a$ and $b$ as a product of primes. }}
+\newline
+\newline
+\underline{ Properties of GCD:}
+\newline
+\newline
+1. $\text{gcd }(a,b)$ is not affected by the signs of $a$ or $b$
+\newline
+2. Condition $(2)$ in the definition of gcd can be replaced by $(2')$ if $c \text{ | } a$ and $c \text{ | } b$ then $c \text{ | } d$.
+\newline
+3. For $a \in \mathbb{Z}^+, \text{gcd }(a,0) = a$.
+\newline
+\newline
+\underline{Least Common Multiple}
+\newline
+\newline
+All $a,b \in \mathbb{Z}$ have (at least) one common multiple, namely $ab$, and so we can define the following:
+For $a,b \in \mathbb{Z}$, not both zero, the positive integer l such that
+$$1)	a \text{ | } l \text{ and } b \text{ | } l$$
+$$2)	\text{If } a \text{ | } c \text{ and } b \text{ | } c \text{ then } l \le c \text{ is called the least common multiple of } a \text{ and } b.$$ 
+\newline
+We write $l = \text{ lcm }(a,b)$.
+\newline
+\newline
+Theorem:
+\newline
+\newline
+\boxed{\text{For all positive integers $a$ and $b$; gcd}(a,b) x \text{ lcm }(a,b) = ab.}
+\newpage
+\subsection*{Quotient and Remainder}
+\
+[mostly in word]
+\newline
+\newline
+\underline{The Quotient-Remainder Theorem (aka The Division Algorithm)}
+\newline
+\newline
+If $a \in \mathbb{Z}$ and $b \in \mathbb{Z}^+$, then there exist unique $q,r \in Z$ such that (q: quotient; r: remainder):
+$$a = bq + r	\text{ and }	0 \le r < b.$$
+\newline
+\newline
+\boxed{\text{ Note: $q$ can be found using floor function; $q = \lfloor a / b \rfloor.$; then $r = a - qb$.}}
+\newpage
+\subsection{The Euclidean Algorithm}
+\
+[mostly in word]
+\newline
+\newline
+\boxed{\text{If $a = bq + r$ then gcd$(a,b) =$ gcd$(b,r)$.}}
+\newline
+\newline
+\underline{The Euclidian Algorithm: General Case [steps]}
+\newline
+\newline
+$1)$	Let $a$ and $b$ be integers with $a > b \geq 0.$
+\newline
+$2)$	If $b = 0$, then gcd$(a,b) = a.$
+\newline
+$3)$	If $b > 0$, use the Quotient-Remainder theorem to write $a = bq + r$ where $0 \leq r < b$.	Then by our prevous result, gcd$(a,b) =$ gcd$(b,r).$
+\newline
+$4)$	Repeat steps 2 and 3 to find gcd$(b,r)$.
+\newline
+\newline
+Example: Find gcd$(708, 540)$
+$$708 = 540 \cdot 1 + 168,$$
+$$540 = 168 \cdot 3 + 36,$$
+$$168 = 36 \cdot 4 + 24,$$
+$$36 = 24 \cdot 1 + 12,$$ 
+$$24 = 12 \cdot 2 + 0.$$
+So,
+$$\text{gcd }(708,540) = 12.$$
+\boxed{\text{Note: gcd is the last non-zero remainder.}}
+\newline
+\newline
+\underline{Bezout's Identity}
+\newline
+\newline
+For $a,b \in Z$ not both zero, there exist integers $x$ and $y$ (not unique) such that:
+\newline
+\newline
+\boxed{ \text{gcd }(a,b) = ax + by.}
+\newline
+\newline
+\boxed{\text{Theorem: Integers $a$ and $b$ are relatively prime if and only if there exists $x,y \in Z$ such that $ax + by = 1$.}}
+\newline
+\newline
+\underline{Extended Euclidean Theorem:}
+The Extended Euclidean Algorithm is a more efficient way of finding the numbers in Bézout's Identity: In looking for gcd$(a,b)$, assume $a > b > 0$.
+\newline
+1. We make up a table with five columns labelled $i, q_i, r_i, x_i, y_i$, where $i$ labels the rows.
+\newline
+2. We set row $1$ to be $1,0,a,1,0$ and row $2$ to be $2,0,b,0,1.$
+Thus $q_1 = q_2 = 0; r_1 = a, r_2 = b; x_1 = y_2 = 1; x_2 = y_1 = 0.$
+\newline
+3. Then for $i$ from $3$ onwards, $q_i$ is the quotient on dividing $r_{i-2}$ by $r_{i-1}$ ($a$ divided by $b$ in the first case).
+\newline
+4. Then subtract $q_i$ times the rest of row $i - 1$ from row $i - 2$.
+\newline
+5. Repeat until we get $r_{n+1} = 0$ for some $n$, then stop.
+Then the gcd is $r_n$ and $r_n = ax_n + by_n$, that is the last row before $r_i$ was zero gives the gcd, the $x$ and the $y$.
+\newline
+In fact a similar identity holds at each step: $r_i = ax_i + by_i$.
+\newpage
+\subsection{Modular Arithmetic}
+[mostly in word]
+\newline
+\newline
+Let $m \geq 2$ be an integer. We say that a and b are congruent modulo $m$ if $m | (a - b)$.
+\newline
+We write this as:
+$$a \cong b (mod m).$$
+The reason we have taken our modulus m to be greater than $2$ is that
+\newline
+1)	As $m | (a - b)$ iff $- m | (a - b)$, there is nothing to be gained from using negative moduli.
+\newline
+2)	All numbers are congruent modulo $1$, so that is not interesting.
+\newline
+3)	divisibility by $0$ is not defined.
+\newline
+\newline
+\underline{Theorem}
+\newline
+For integers $a, b$and $m, a \cong b (mod m)$ if and only if there is an integer $k$ such that $a = b + km$.
+\newline
+\newline
+\underline{Arithmetic with Congrences}
+\newline
+Suppose $a \cong b (mod m)$ and $c \cong d (mod m)$.
+\newline
+Then
+$$(1a) (a + c) \cong (b + d) (mod m).$$
+$$(1b) (a - c) \cong (b - d) (mod m).$$
+$$(2)	ac \cong bd (mod m).$$
+$$(3)	an \cong bn (mod m) for all n \in N.$$
+$$(4)	If k \text{ | } m then a \cong b (mod k).$$
+\boxed{note: never divide congruences}
+\newline
+\newline
+Applications of Congruence Arithmetic:
+\newline
+1. Pseudo-random Numbers
+\newline
+2. Equations with no solutions
+\newpage
+\section{Logic and Proofs}
+\subsection{Introduction to Logic and Proofs}
+Mathematical proof: consists of logical deduction on the basis of agreed premises. Apart from human error the results are certain.
+\newline
+\newline
+\underline{ Techniques for Proof: }
+\newline
+\newline
+•	Always explain what you are doing, and your reasons for drawing your conclusions.
+\newline
+•	Simplify!
+\newline
+•	Keep the aim in mind.
+\newline
+•	Plan a solution. 
+\newline
+• Work on one side of an equation or inequation to relate it to the other.
+\newline
+\newline
+To study proofs: you always have to practice!! No matter what. There are techniques,
+but most of the time you will have to practice proofs.
+\newline
+What we study is methods of proof and logic.
+\newpage
+\subsection{Example of Proofs}
+[in word?? mostly?? i think so yeah]
+\newline
+\newline
+Example: $\frac{1}{1000} - \frac{1}{1001} < \frac{1}{1000000}.$
+\newline
+\underline{Techniques:} 
+\newline
+1. Common denominator (simple answer); 
+\newline
+2. Reciprocals; 1/2a $<$ 1/a kinda way (bigger denominator smaller fractions)
+\newline
+3. Simplify
+\newline
+\newline
+\textbf{Proof}. We have
+$$\frac{1}{1000} - \frac{1}{1001} = \frac{1001 - 1000}{1000 \text{ x } 1001} = \frac{1}{1001000}$$
+But $1001000 > 1000000$, and both are positive numbers, so
+$$\frac{1}{1001000} < \frac{1}{1000000}$$  
+Therefore
+$$\frac{1}{1000} - \frac{1}{1001} < \frac{1}{1000000}.$$  
+\newline
+\boxed{\text{It is handy to use calculators, but this is generally bad practice as there is no understanding.}}
+\newline
+\newline
+Equality proofs should ideally not be proved by calculators!
+\newpage
+\subsection{Further Examples fo Proofs}
+Another example: 
+\newline
+Example: $\sqrt[8]{8!} < \sqrt[9]{9!}$.
+\newline
+[rough working]
+$$=> 8! < \sqrt[9]{9! ^ 8},$$
+$$=> (8!)^ 9 < (9!)^ 8, $$
+$$=> (1 \times 2 \times \dots \times 8)^9 < (1 \times 2 \times \dots \times 9)^8, $$
+$$=> (1 \times 2 \times \dots \times 8)^9 < (1 \times 2 \times \dots \times 8)^8 \times 9^8,$$
+$$=> 1 \times 2 \times \dots \times 8 < 9^8.$$
+which is obviously less than 9 times 9 times etc, therefore making the statement true.
+\newline
+\newline
+However, you can't start like this. Ie, you have to start with the fact that is true, then ending up with the question.
+\newline
+You have to check if it can be reversed (ie reversing steps in a proof: is that possible?).
+\newline
+(in this case, you can reverse it: proof in word.)
+\newline
+\newline
+\textbf{ Things to learn from this proof:}
+\newline
+\newline
+$\bullet$ Go back to definitions (expand the definition)
+\newline
+$\bullet$ Simplify!
+\newline
+$\bullet$ A proof is often discovered by working backwards; but it must often be written forwards.
+\newline
+$\bullet$ Explain logical and technical steps in words (with punctuation!)
+\newpage
+\subsection{Generalisation and 'All' Statements}
+$\bullet$ For examples such as $\frac{1}{1000} - \frac{1}{1001} < \frac{1}{1000^2}$, we can replace $n$ with $1000$ to give:
+$$\frac{1}{n} - \frac{1}{n + 1} < \frac{1}{n^2},$$
+where $\forall n \in \mathbb{Z}^+; \frac{1}{n} - \frac{1}{n + 1} < \frac{1}{n^2}.$
+\newline
+\newline
+This is called a \textbf{ universal statement }(an 'All' statement). The replacement of $n$ with $1000$ as such is called \textbf{generalisation}.
+\newline
+[proof for the n statement in word]
+\newline
+\newline
+\underline{Things to learn:}
+\newline
+\newline
+$\bullet$ A common proof pattern for $\forall x \in A, \text{property } B \text{  holds is:}$
+$$\text{Let } x \in A.
+\dots 
+\text{Therefore $x$ has a property  } B.$$
+$\bullet$ Cannot be proved by listing examples
+\newline
+\newline
+\underline{All Statement Written in:}
+\newline
+$\bullet  \forall x \in A, \text{ property $B$ holds};$
+\newline
+$\bullet \text{ For Each } x \in A, x \in B;$
+\newline
+$\bullet \text{ every } A \text{ is a } B;$
+\newline
+$\bullet \text{ if } x \text{ is an } A, \text{then } x \text{ is a } B;$
+\newline
+$\bullet \text{ No } A \text{ is not a } B;$
+\newline
+$\bullet \forall x \in A, x \in B;$
+\newline
+$\bullet$ $B$ is true if $A$ is true;
+\newline
+$\bullet$ $A$ is true only if $B$ is true;
+\newline
+$\bullet$ property $A$ is sufficient(information) for property $B$ to hold;
+\newline
+$\bullet$ property $B$ is necessary for property $A$ to hold;
+\newline
+\newline
+[example in word]
+\newpage
+\subsection{Exhaustion of Cases}
+[proofs in word]
+\newline
+\newline
+\underline{Things to learn from these sort of proofs:}
+\newline
+$\bullet$ Explain what you are doing
+\newline
+$\bullet$ Outline proof like how you would outline 'all' statement Proofs
+\newline
+$\bullet$ Often useful where there is natural division of the problem into smaller cases (like where you can use induction or splitting into cases as such);
+\newline
+Examples include absolute value proofs, (modular) congruences or divisibility.
+\newline
+$\bullet$ Clearly state the seperate cases, and be sure all cases really are covered.
+\newline
+$\bullet$ Patterns for "if $A$ then $B$" is:
+$$\text{ Suppose that $A$ is true } \dots \text{ Therefore $B$ is true.}$$
+\newline
+$\bullet$ Expand the definition
+\newline
+$\bullet$ Keep aim in mind!!! Find general steps, substitute, reduce where necessary.
+\newpage
+\subsection{Writing Proofs}
+[proofs in word]
+$\bullet$ Usually involves two stage:
+\newline
+1. Discover reasons why statement is true
+\newline
+2. present these reasons as a coherent, carefully written argument.
+\begin{theorem}
+  Let n be an integer. If $n$ is even, then $n^2$ is even.
+  \newline
+    $\bullet$ use a basic idea to prove it (for example, $n = 2k$, so $n^2 = 4k^2)$.
+\end{theorem}
+$\text{ }$
+\newline
+\textbf{Things to learn from proof}
+\newline
+$\bullet$ Written in complete sentences, with correct spelling and grammar!
+\newline
+$\bullet$ Sentence should begin with a word, not a variable/number.
+\newline
+$\bullet$ In text, writing equations consequtively with no words between them can make it unclear.
+\newline
+\newline
+\boxed{\text{ Bad Practice: Let } n = 2k, k \in \mathbb{Z}.}
+\newline
+\newline
+\boxed{\text{ Good practice: Let } n = 2k, \text{ where } k \in \mathbb{Z}.}
+\newline
+\newline
+\textbf{Structure of a Proof}
+\newline
+$\bullet$ Begin with a clear statement.
+\newline
+$\bullet$ Write the word "Proof"; then begin argument.
+\newline
+$\bullet$ Any notation used; introduce variables properly.
+\newline
+$\bullet$ Logic of the proof should be clear.
+\newline
+$\bullet$ Include a conclusion that indicates end. Can include "QED" but not necessary.  
+\newline
+\newline
+\textbf{Helping the reader}
+\newline
+$\bullet$ Give reasons for all conclusions. 
+\newline
+$\bullet$ Helpful to explain technical and algebraic steps. 
+\newline
+$\bullet$ Need to make comments about variables being integers, etc.
+\newline
+$\bullet$ Try to the get the level of the argument right.
+\newpage
+\subsection{Converse; If and Only if}
+The \textbf{ converse } of "if $A$ then $B$" is "if $B$ then $A$", and so forth.
+\newline
+\newline
+\boxed{\text{ Converse of a statement may or may not be true. }}
+\newline
+\newline
+\boxed{\text{\textbf{Converse fallacy} refers to try and prove the converse of the statement because it is not true.}}
+\newline
+\newline
+[examples in word]
+\newline
+\newline
+\underline{Things to Learn from the proof}
+\newline
+\newline
+$\bullet$ Disproving an "all" statement just means finding a counterexample;
+ie find one example where $A$ is true but $B$ is false.
+\newline
+\newline
+\textbf{If and only if} When a statement "if $A$ then $B$" and converse "if $B$ then $A$" are both true, then we can 
+combine it to write "$A$ iff $B$" ($A \leftrightarrow B$).
+\newline
+\newline
+Statement can be rephrased as the following:
+\newline
+$\bullet$ "if $A$ then $B$", conversely "every $A$ is $B$ and every $B$ is $A$".
+\newline
+$\bullet$ $A$ is a necessary and sufficient condition for $B$;
+\newline
+$\bullet A \Longleftrightarrow B.$ 
+\newline
+\newline
+[examples in word]
+\newline
+\newline
+\boxed{\text{Note: "Iff" statements really consists of two statements; therefore proof is of two parts.}}
+\newline
+\newline
+\textbf{Common proof patter for iff statements: }
+\newline
+"Firstly, let $x$ be an $A$"
+\dots
+"Therefore, $x$ is a $B$."
+"Conversely, let $x$ be a $B$.
+\dots
+Therefore, $x$ is an $A$.
+\newline
+\newline
+\begin{theorem}
+  Let $n \in \mathbb{Z}.$ Then, 
+    $6 \arrowvert n$ iff both $2 \arrowvert n$ and $3 \arrowvert n.$
+\end{theorem}
+(1. suppose $6 | n$, then find $2 | n$ and $3 | n$; then prove converse [converse; gcd$(2, 3) = 1$ therefore $2 \times 3 | n$].)
+\newline
+\newline
+\underline{Things to learn from proof: }
+\newline
+$\bullet$ Expand definitions!!
+\newline
+$\bullet$ Keep goal in mind.
+\newline
+$\bullet$ Make logical subdivision clear by writing "Firstly" and "Conversely"
+\newline
+$\bullet$ Each part follows the normal format for an "if ... then" proof.
+\newline
+$\bullet$ "Similarily" saves work for the reader, not the writer. 
+\newpage
+\subsection{"Some" Statements}
+Asserts that there exists something which satisfies a certain condition.
+\newline
+\newline
+\boxed{\text{"There exists something such that ..." means that there is one object or more with the given property.}}
+\newline
+\newline
+For example: "there exists $x \in \mathbb{R}$ such that $x^2 = 2$"
+\newline
+\newline 
+\textbf{Examples of "some" statements}
+\newline
+\newline
+$\bullet$ Some integers are positive.
+\newline
+$\bullet$ There exists a function $f: \mathbb{R} \rightarrow \mathbb{R}$ which is both odd and even.
+\newline
+$\bullet$ Some students enjoy doing Maple tests.
+\newline
+$\bullet \text{  } S \neq \emptyset.$
+\newline
+$\bullet \text{  } 6 \arrowvert n.$
+\newline
+$\bullet \text{  } a$ is odd.
+\newline
+\newline
+A "some" statement can be written as:
+\newline
+\newline
+$\bullet$ some $A$ is a $B$;
+\newline
+$\bullet$ some $A$s are $B$s;
+\newline
+$\bullet$ there exists an $A$ which is (also) a $B$;
+\newline
+$\bullet$ for some $x \in A$ we have $x \in B$;
+\newline
+$\bullet$ property $B$ holds for some $x \in A$;
+\newline
+$\bullet$ $\exists \text{ } x \in A : x \in B$;
+\newline
+\newline
+[example in word]
+\newline
+\newline
+\underline{Things to learn from proofs:}
+\newline
+\newline
+$\bullet$ Discover the proof by working backwards; but write proof in right order.
+\newline
+$\bullet$ Real work is "behind the scenes"; requires much more knowledge of algebra and calculus.
+\newline
+$\bullet$ Proof with $f$ gives a "some" statement which has an "all" statement within.
+\newpage
+\subsection{"Some" statements confused}
+Sometimes it is possible to prove a "some" statement without producing any particular object.
+\newline
+\newline
+\textbf{Example: } Let $f(x) = x^5 + 2x - 2.$ Then $f(x) = 0$ for some $x \in [0, 1].$
+\newline
+Check end points. The graphs are continuous curves.
+\newline
+\newline
+\textbf{Proof. } Let $f(x) = x^5 + 2x - 2.$  Then, $f(0) = -2$, which is negative, while $f(1) = 1;$ which is positive.
+So, the graph of $f$, being a continuous curve, must cross $x$-axis somewhere between $0$ and $1$; and at this crossing point we have $f(x) = 0.$
+\newline
+(existence proof) therefore, it completes the proof.
+\newline
+\newline
+[other example in word]
+\newline
+\newline
+\underline{Things to learn from proofs:}
+\newline
+\newline
+$\bullet $ Needed background knowledge
+\newline
+$\bullet $ Tedious to find actual $x$ and $y$ values to prove, so find generic solutions that make proofs easier.
+\newline
+$\bullet $ "Clearly" does not mean you don't have to check the following statement. (ie you have to check if the most obvious statement in the question is also true.)
+\newline 
+\newline
+\textbf{Existence and uniqueness. } A statement of the form "there exists a unique $x \in S$ such that \dots"
+\newline
+asserts that there is one and only one object having the given property.
+\newline
+\newline
+Proof for such statements:
+\newline
+$\bullet $ show $\exists$ an object with given property;
+\newline
+$\bullet $ show there cannot be two diff objects with property. Common proof patter is as follows:
+\newline
+\newline
+"Suppose that $x_1$ and $x_2$ have the same property."
+\newline
+\dots
+\newline
+"Therefore, $x_1 = x_2$."
+\newline
+\newline
+[examples in word: $a = bq + r.$]
+\newline
+\newline
+\underline{Things to learn from proof:}
+\newline
+$\bullet $ Clearly distinguish the "existence" and "uniqueness" parts of the proof.
+\newpage
+\subsection{Multiple Quantifiers}
+$\bullet $ The words "all" and "some" -> quantifiers. A statement can have more than one quantifier.
+\newline
+\newline
+\textbf{Examples:}
+\newline
+$\bullet $ For every $x \in \mathbb{Z}, \exists y \in \mathbb{Z}$ such that $y > x$.
+\newline
+$\bullet $ $\exists y \in \mathbb{Z}$ such that for every $x \in \mathbb{Z}, y > x.$ (not the same as the first statement.)
+\newline
+$\bullet $ $2^29 - 1$ is composite. (rewrite: $2^29 - 1 = ab$ where $a > 1, b > 1$ for some integers $a, b$.)
+\newline
+$\bullet $ For any prime there is a larger prime.
+\newline
+$\bullet $ $(6, -1, 5)$ is a linear combination of $(1, 1, 2)$ and $(1, 2, 3).$
+\newline
+$\bullet $ There is a function $f: \mathbb{R} \rightarrow \mathbb{R}$ which is equal to its own derivative.
+\newline
+$\bullet $ Every positive real number has a real square root.
+\newline
+$\bullet $ For all $A, B, C \subseteq U, A \cup (B \cup C) = (A \cup B) \cup C.$
+\newline
+$\bullet $ The function $f : X \rightarrow Y$ is onto.
+\newline
+\newline
+\begin{theorem}
+  Any composite positive integer has a factor greater than $1$ and less than or equal to its square root.
+\end{theorem}
+Note: Making the quantifiers explicit, the statement is: 
+\newline
+\newline
+\boxed{\text{"for every composite integer $n \text{ }\exists \text{ } c,$ a factor of $n$ such that $c > 1$ and $c \leq \sqrt{n}$".}}  
+\newline
+\newline
+Let $n$ be composite.
+\newline
+$$n = ab, a > 1, b > 1.$$
+Case $I: a \leq \sqrt(n)$
+$$c = a, \text{ has required properties}.$$
+Case $II: a > \sqrt{n}$
+$$c = b; b = \frac{n}{a} < \frac{n}{\sqrt{n}} = \sqrt{n}.$$
+Therefore, $c \arrowvert n, 1 < c \leq \sqrt{n}.$
+\newline
+\newline
+\underline{ Things to learn from proof: }
+\newline
+$\bullet $ Rewrite the given statement if necessary to make the quantifiers clear.
+\newline
+$\bullet $ Patter of "all" proof: within this, patter of "existence" proof.
+\newline
+$\bullet $ Another example of "proof by exhaustion" of cases.
+\newline
+$\bullet $ Expand the defintion!!
+\newpage
+\subsection{Multiple quantifiers continued (limits)}
+\begin{theorem}
+  $\lim_{x \to \infty} \frac{4x^2 + 7x + 19}{2x^2 + 3} = 2.$
+\end{theorem}
+\textbf{Note: } According to definition of a limit, we must show that for every $\epsilon > 0, \exists$ a real number $M$ such that
+$$\text{if } x > M \text{ then } \arrowvert \text{ } \frac{4x^2 + 7x + 19}{2x^2 + 3} - 2 \text{ } \arrowvert < \epsilon.$$
+\textbf{Proof: } Let $x > 0.$
+\newline
+Choose $M = $ max$(1, \frac{10}{\epsilon}).$
+\newline
+Let $x > M. $ Then
+$$x > 1 \text{ and } x > \frac{10}{\epsilon}.$$
+so
+\newline
+$$\arrowvert \text{ } \frac{4x^2 + 7x + 19}{2x^2 + 3} - 2 \text{ } \arrowvert = \arrowvert \text{ } \frac{7x + 13}{2x^2 + 3} \text{ } \arrowvert,$$
+$$ = \frac{7x + 13}{2x^2 + 3},$$
+$$ < \frac{7x + 13}{2x^2} \text{ (because $x > 1$)},$$
+$$ = \frac{10}{x},$$
+$$ = \frac{10}{\frac{10}{\epsilon}} \text{ (since $x = \frac{10}{\epsilon}$)},$$
+$$ = \epsilon.$$
+Therefore, $\lim_{x \to \infty} \frac{4x^2 + 7x + 19}{2x^2 + 3} = 2.$
+\newline
+\newline
+\underline{Things to learn from proof:}
+\newline
+$\bullet $ Expand definition!!
+\newline
+$\bullet $ Logical structure of statement to be proved is: "for all \dots there exists \dots such that if \dots then \dots",
+and proof follows structure properly. 
+\newline
+$\bullet $ Working backwards is very important!!
+\newpage
+\end{document}
