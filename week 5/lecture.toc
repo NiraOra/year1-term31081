@@ -35,3 +35,4 @@
 \contentsline {subsection}{\numberline {3.11}Multiple quantifiers continued (limits)}{36}{}%
 \contentsline {subsection}{\numberline {3.12}Change of order of quantifiers}{37}{}%
 \contentsline {subsection}{\numberline {3.13}"Not" and contradiction}{38}{}%
+\contentsline {subsection}{\numberline {3.14}Contrapositive}{39}{}%
