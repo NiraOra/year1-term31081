@@ -16,6 +16,22 @@
 \section{Question 1}
 \subsection{a)}
 \textbf{ Prove that in modulo $9$, it is not possible for a perfect square to be congruent to $2, 3, 4, 6 \text{ or } 8$.}
+\textbf{ Proof: } For any integer $n \in \mathbb{Z}$, we say that $n^2 \equiv 0, 1, 4, 7 (\text{ mod } 9).$ 
+\newline
+\newline
+This can be deduced by finding the squares of $0, 1, 2, 3, 4$ respectively and applying the [] theorem for numbers up to $9$.
+$$0^2 \equiv 0 (\text{mod }9),$$
+$$1^2 \equiv 1 (\text{mod }9),$$
+$$2^2 \equiv 4 (\text{mod }9),$$
+$$3^2 \equiv 0 (\text{mod }9),$$
+$$4^2 \equiv 7 (\text{mod }9).$$
+
+Through [], we find the similar rule applied to $5$ through $8$ (since $9^2 \equiv 0 (\text{ mod } 9)$).
+$$5^2 \equiv (-4)^2 \equiv 7 (\text{mod }9),$$
+$$6^2 \equiv (-3)^2 \equiv 0 (\text{mod }9),$$
+$$7^2 \equiv (-2)^2 \equiv 4 (\text{mod }9),$$
+$$8^2 \equiv (-1)^2 \equiv 1 (\text{mod }9).$$
+Here, we see that the perfect squares always end with the digits $0, 1, 4$ and $7$. Thus, it can be proved that in modulo $9$, it is not possible for a perfect square to be congruent to $2, 3, 4, 6, \text{ or } 8$.
 \newpage
 \subsection{b)}
 \textbf{ Hence (and not otherwise) prove that there do not exist three consecutive integer values of $n$ for which $41n + 39$ is a perfect square. }
