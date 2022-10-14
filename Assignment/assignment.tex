@@ -6,7 +6,7 @@
 \usepackage{graphicx}
 \usepackage[colorlinks=true, allcolors=black]{hyperref}
 
-\title{Maths Assignment - Applied Mathematics Flavour}
+\title{Maths Assignment - 1081}
 \author{z5417727}
 
 \begin{document}
@@ -15,27 +15,94 @@
 \newpage
 \section{Question 1}
 \subsection{a)}
-\textbf{ Prove that in modulo $9$, it is not possible for a perfect square to be congruent to $2, 3, 4, 6 \text{ or } 8$.}
-\textbf{ Proof: } For any integer $n \in \mathbb{Z}$, we say that $n^2 \equiv 0, 1, 4, 7 (\text{ mod } 9).$ 
+\textbf{ Prove that in modulo $9$, it is not possible for a perfect square to be congruent to $2, 3, 5, 6 \text{ or } 8$.}
 \newline
 \newline
-This can be deduced by finding the squares of $0, 1, 2, 3, 4$ respectively and applying the [] theorem for numbers up to $9$.
+\textbf{ Proposition: } For any integer $n \in \mathbb{Z}$, we say that $n^2 \equiv 0, 1, 4, 7 (\text{ mod } 9).$ 
+\newline
+\newline
+\textbf{Proof: } This can be deduced by finding the squares of $0, 1, 2, 3, 4$ respectively.
 $$0^2 \equiv 0 (\text{mod }9),$$
 $$1^2 \equiv 1 (\text{mod }9),$$
 $$2^2 \equiv 4 (\text{mod }9),$$
 $$3^2 \equiv 0 (\text{mod }9),$$
 $$4^2 \equiv 7 (\text{mod }9).$$
-
-Through [], we find the similar rule applied to $5$ through $8$ (since $9^2 \equiv 0 (\text{ mod } 9)$).
+Through finding the modulo of $9$, we find the similar rule applied to $5$ through $8$ (since $9^2 \equiv 0 (\text{ mod } 9)$).
 $$5^2 \equiv (-4)^2 \equiv 7 (\text{mod }9),$$
 $$6^2 \equiv (-3)^2 \equiv 0 (\text{mod }9),$$
 $$7^2 \equiv (-2)^2 \equiv 4 (\text{mod }9),$$
 $$8^2 \equiv (-1)^2 \equiv 1 (\text{mod }9).$$
-Here, we see that the modulo of perfect squares always end with the digits $0, 1, 4$ and $7$. Thus, it can be proved that in modulo $9$, it is not possible for a perfect square to be congruent to $2, 3, 4, 6, \text{ or } 8$.
+Here, we see that the modulo of perfect squares always end with the digits $0, 1, 4$ and $7$. Thus, it can be proved that in modulo $9$, it is not possible for a perfect square to be congruent to $2, 3, 5, 6, \text{ or } 8$.
 \newpage
-\subsection{b)}ƒƒ
+\subsection{b)}
 \textbf{ Hence (and not otherwise) prove that there do not exist three consecutive integer values of $n$ for which $41n + 39$ is a perfect square. }
-Consider a number $n$, $n + 1$ and $n + 2$ for $n \in \mathbb{R}$.
+\newline
+\newline
+Consider a number $n - 1$, $n$ and $n + 1$ for $n \in \mathbb{Z}$. 
+Then, we see that the numbers are: 
+$$41(n - 1) + 39, 41(n) + 39, 41(n + 1) + 39.$$
+\newline
+\newline
+\textbf{ Proposition } For $41(n - 1) + 39, 41(n) + 39 \text{ and } 41(n + 1) + 39$ to be perfect squares, they should not be congruent to $2, 3, 5, 6 \text{ or } 8$ in modulo $9$ (this is proved in q$1$ (a)).
+\newline
+\newline
+\textbf{Proof } Consider $41n + 39$ as a perfect square.
+\newline
+\newline
+$$41n + 39 \text{ as a perfect square } \Rightarrow 41n + 39 = k^2, \text{ where } k \in \mathbb{Z}.$$
+Here, we can use the proof from q1 (a) to deduce that $k^2 \text{ mod } 9$ would give $0, 1, 4$ or $7$ as the remainder since it is a perfect square. 
+\newline
+\newline
+However, when we check the number $41(n - 1) + 39,$
+$$\Rightarrow 41n - 41 + 39,$$
+$$\Rightarrow (41n + 39) - 41,$$
+$$\Rightarrow k^2 - 41.$$
+Thus, we can consider the modulo of $9$ for $k^2 + 41$:
+$$\Rightarrow (k^2 - 41) (\text{mod } 9),$$
+$$\Rightarrow (k^2 (\text{mod } 9) - 41 (\text{mod } 9)) (\text{mod } 9). (\text{modular subtraction})$$
+Here, we know that $41 \equiv 5 (\text{mod } 9),$ and $k^2$ gives a remainder of either $0, 1, 4, 7.$ Consider each of the cases individually:
+\newline
+$1) $ $k^2 \equiv 0 (\text{mod } 9)$:
+\newline
+\newline
+$$\Rightarrow (k^2 (\text{mod } 9) - 41 (\text{mod } 9)) (\text{mod } 9).$$
+$$\Rightarrow (0 - 5) (\text{mod } 9),$$
+$$\Rightarrow -5 (\text{mod } 9),$$
+$$\Rightarrow -5.$$
+Since the $(k^2 - 41) \equiv -5 (\text{mod } 9),$ this means that it is not a perfect square (as proven in q1 a)).
+\newline
+$2) $ $k^2 \equiv 1 (\text{mod } 9)$:
+\newline
+\newline
+$$\Rightarrow (k^2 (\text{mod } 9) + 41 (\text{mod } 9)) (\text{mod } 9).$$
+$$\Rightarrow (1 - 5) (\text{mod } 9),$$
+$$\Rightarrow -4 (\text{mod } 9),$$
+$$\Rightarrow -4.$$
+Since the $(k^2 - 41) \equiv -4 (\text{mod } 9),$ this means that it is not a perfect square (as proven in q1 a)).
+\newline
+$3) $ $k^2 \equiv 4 (\text{mod } 9)$:
+\newline
+\newline
+$$\Rightarrow (k^2 (\text{mod } 9) - 41 (\text{mod } 9)) (\text{mod } 9).$$
+$$\Rightarrow (4 - 5) (\text{mod } 9),$$
+$$\Rightarrow -1 (\text{mod } 9),$$
+$$\Rightarrow -1.$$
+Since the $(k^2 - 41) \equiv 0 (\text{mod } 9),$ this means that it is not a perfect square (as proven in q1 a)).
+\newline
+$4) $ $k^2 \equiv 7 (\text{mod } 9)$:
+\newline
+\newline
+$$\Rightarrow (k^2 (\text{mod } 9) - 41 (\text{mod } 9)) (\text{mod } 9).$$
+$$\Rightarrow (7 - 5) (\text{mod } 9),$$
+$$\Rightarrow 2 (\text{mod } 9),$$
+$$\Rightarrow 2.$$
+Since the $(k^2 - 41) \equiv 2 (\text{mod } 9),$ this means that it is not a perfect square (as proven in q1 a)).
+\newline
+We see that for each case, $41(n - 1) + 39$ can never be a perfect square if $41n + 39$ is a perfect square.
+\newline
+\newline
+Therefore, we can say that there do not exist three consecutive integer values of $n$ for which $41n + 39$ is a perfect square.
+\newpage
 \section{Question 2}
 \textbf{ A certain relation $\star$ is defined on the set $\mathbb{Z}^+$ by:
 \newline
@@ -43,28 +110,106 @@ $$x \star y \text{ if and only if every factor of } x \text{ is a factor of } y.
 For each of the questions below, be sure to provide a proof supporting your answer. }
 \subsection{a)}
 \textbf{ Is $\star $ reflexive? }
+\newline
+\newline
+\textbf{Theorem: } If $\star$ is to be reflexive, then $x \sim x.$
+\newline
+\newline
+[not done yet]
 \newpage
 \subsection{b)}
 \textbf{Is $\star $ symmetric?}
+\newline
+\newline
+\textbf{Theorem: } If $\star$ is symmetric, then $x \sim y \leftrightarrow y \sim x.$
+\newline
+\newline
+[not done yet]
 \newpage
 \subsection{c)}
 \textbf{Is $\star $ anti-symmetric? }
+\newline
+\newline
+\textbf{Theorem: } If a set $A \leq B, B \leq A \rightarrow A = B.$
+\newline
+\newline
+[not done yet]
 \newpage
 \subsection{d)}
 \textbf{ Is $\star $ transitive?}
+\newline
+\newline
+If a set $A \leq B, B \leq C \rightarrow A \leq C.$
+\newline
+\newline
+[not done yet]
 \newpage
 \subsection{e)}
 \textbf{ Is $\star $ an equivalence relation, a partial order, both or neither?}
+\newline
+\newline
+[not done yet]
 \newpage
 \section{Question 3}
 \textbf{ Consider the two functions $f: X \rightarrow Y$ and $g: Y \rightarrow Z$ for non-empty sets $X, Y, Z$.
 Decide whether each of the following statements is true or false, and prove each claim.}
 \subsection{a)}
 \textbf{ If $g \circ f$ is injective, then $g$ is injective.}
+\newline
+\newline
+\textbf{ Counterexample }
+\newline
+\newline
+Consider sets $X = \{1\}, Y = \{2, 3\}, Z = \{4\}.$
+\newline
+\newline
+Function $g \circ f$ implies that $g \circ f: X \rightarrow Z$ (since $f: X \rightarrow Y \text{ and } g: Y \rightarrow Z$). Therefore, $g(f(1)) = 4.$
+\newline
+This makes it an injective function as it is one to one.
+\newline
+\newline
+However, for the function $g$, $g(2) = g(3) = 4, $ making the function non-injective.
+\newline
+\newline
+Therefore, by a counterexample, we can conclude that the statement is false.
 \newpage
 \subsection{b)}
 \textbf{ If $g \circ f$ is injective, then $f$ is injective. }
+\newline
+\newline
+\textbf{Proof: } Suppose $f$ is not injective. 
+Since $f: X \rightarrow Y$, we take two numbers $x_1, x_2 \in \mathbb{Z},$ where $x_1, x_2$ are in the set $X$ and $f(x_1) \text{ and } f(x_2)$ are in set $Y$, giving:
+$$f(x_1) = f(x_2) \text{ when } x_1 \not = x_2,$$
+Similarily, since $g: Y \rightarrow Z$, this would imply that:
+$$(g \circ f)(x_1) = (g \circ f)(x_2) \text{ when } f(x_1) \not = f(x_2) \text{ ie, }$$
+$$g(f(x_1)) = g(f(x_2)) \text{ when } f(x_1) \not = f(x_2).$$
+\newline
+Since $f(x_1), f(x_2) \in Y$ and $g(f(x_1)) = g(f(x_2)) \in Z$, we can consider that this proves the statement " if $f$ is not injective, then $g \circ f$ is not injective".
+\newline
+\newline
+Therefore, by contrapositive, we can conclude that if $g \circ f$ is injective then $f$ is injective.
 \newpage
 \subsection{c)}
 \textbf{ If $g \circ f$ is injective and $f$ is surjective, then $g$ is injective}
+\newline
+\newline
+\textbf{Proof }
+Consider two variables $y_1, y_2 \in  Y.$  $\text{ such that } g(y_1) = g(y_2). [y_1, y_2 \in \mathbb{R}]$
+\newline
+\newline
+Since $f$ is known to be surjective, we can consider two other variables $x_1, x_2 \in X [x_1, x_2 \in \mathbb{R}].$
+\newline
+\newline
+Then, if we map $f$ to $g$, using this surjective nature of $f$, we can presume $f(x_1) = y_1, f(x_2) = y_2.$ With this, the proof follows:
+$$\Rightarrow g(f(x_1)) = g(f(x_2)),$$
+$$\Rightarrow g \circ f(x_1) = g \circ f(x_2),$$
+where $x_1$ = $x_2$ because $g \circ f$ is injective (given in question).
+\newline
+Then,
+$$\Rightarrow f(x_1) = f(x_2),$$
+$$\Rightarrow y_1 = y_2.$$
+Thus, $g(y_1) = g(y_2) \Rightarrow y_1 = y_2,$ which means $g$ is injective. 
+\newline
+\newline
+Therefore, we can conclude that if $g \circ f$ is injective and $f$ is surjective, then $g$ is injective.
 \end{document}
