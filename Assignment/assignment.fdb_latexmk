@@ -1,7 +1,9 @@
 # Fdb version 3
-["pdflatex"] 1665577537 "/Users/niranjanaarunmenon/Desktop/Term 3 /Discrete Mathematics/term3-1081/Assignment/assignment.tex" "assignment.pdf" "assignment" 1665577538
-  "/Users/niranjanaarunmenon/Desktop/Term 3 /Discrete Mathematics/term3-1081/Assignment/assignment.tex" 1665577537 2805 e00e583f8bad4f37badf401fb01057fa ""
+["pdflatex"] 1665745588 "/Users/niranjanaarunmenon/Desktop/Term 3 /Discrete Mathematics/term3-1081/Assignment/assignment.tex" "assignment.pdf" "assignment" 1665745589
+  "/Users/niranjanaarunmenon/Desktop/Term 3 /Discrete Mathematics/term3-1081/Assignment/assignment.tex" 1665745587 2877 8d8b6d9ca1628011cf76d2dd756ca5b0 ""
+  "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
+  "/usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -34,6 +36,7 @@
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1248133631 32762 224316ccc9ad3ca0423a14971cfa7fc1 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1248133631 34694 ad62b13721ee8eda1dcc8993c8bd7041 ""
+  "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb" 1215737283 138258 6525c253f16cededa14c7fd0da7f67b2 ""
   "/usr/local/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1461363279 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/local/texlive/2022/texmf-dist/tex/generic/atbegshi/atbegshi.sty" 1575674566 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
   "/usr/local/texlive/2022/texmf-dist/tex/generic/babel-english/english.ldf" 1496785618 7008 9ff5fdcc865b01beca2b0fe4a46231d4 ""
@@ -95,10 +98,10 @@
   "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1647878959 4410336 7d30a02e9fa9a16d7d1f8d037ba69641 ""
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1661306408 2826441 12d1eb35fb558fb993dc66a32e4b5118 ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
-  "assignment.aux" 1665577538 2180 db04a17b5365507b39ab82f80c24126c "pdflatex"
-  "assignment.out" 1665577538 992 d2d3f51d6a9ba5dddfda738cdf66903d "pdflatex"
-  "assignment.tex" 1665577537 2805 e00e583f8bad4f37badf401fb01057fa ""
-  "assignment.toc" 1665577538 910 cb90365242700ccb85cba33748f7ec6c "pdflatex"
+  "assignment.aux" 1665745589 2179 10a90cf3a9bd4297f9a85bff7bff6de7 "pdflatex"
+  "assignment.out" 1665745589 992 d2d3f51d6a9ba5dddfda738cdf66903d "pdflatex"
+  "assignment.tex" 1665745587 2877 8d8b6d9ca1628011cf76d2dd756ca5b0 ""
+  "assignment.toc" 1665745589 909 424cd3066338034ec5f60db9496cacf0 "pdflatex"
   (generated)
   "assignment.aux"
   "assignment.log"
