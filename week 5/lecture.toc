@@ -38,3 +38,5 @@
 \contentsline {subsection}{\numberline {3.14}Contrapositive}{39}{}%
 \contentsline {subsection}{\numberline {3.15}More examples of negation and negation of}{40}{}%
 \contentsline {subsection}{\numberline {3.16}Mathematical induction 1}{41}{}%
+\contentsline {subsection}{\numberline {3.17}Mathematical Induction 2}{42}{}%
+\contentsline {subsection}{\numberline {3.18}Logic}{43}{}%
