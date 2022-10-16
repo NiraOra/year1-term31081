@@ -40,3 +40,6 @@
 \contentsline {subsection}{\numberline {3.16}Mathematical induction 1}{41}{}%
 \contentsline {subsection}{\numberline {3.17}Mathematical Induction 2}{42}{}%
 \contentsline {subsection}{\numberline {3.18}Logic}{43}{}%
+\contentsline {subsection}{\numberline {3.19}Truth Tables}{44}{}%
+\contentsline {subsection}{\numberline {3.20}Laws of logical equivalence}{45}{}%
+\contentsline {subsection}{\numberline {3.21}Valid and Invalid arguments}{47}{}%

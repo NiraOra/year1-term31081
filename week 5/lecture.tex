@@ -1,5 +1,6 @@
 \documentclass{article}
-\usepackage{amsmath,amsthm,amsfonts}                        % AMS Math
+\usepackage{amsmath,amsthm,amsfonts}  
+\usepackage{amssymb}                      % AMS Math
 \usepackage{thmtools}                                       % Theorem Tools
 \usepackage{bm}        
 \usepackage{tabto}   
@@ -1383,5 +1384,202 @@ These are called "propositional forms".
 \newline
 \newline
 [example in $3b$ pdf]
+\newpage
+\subsection{Truth Tables}
+Logic of propositions: give \textbf{ truth } values $T$ or $F$ for propositions $p, q, r, \dots$ and determine the truth value for a certain commpound composition.
+\newline
+\newline
+[truth value tables in 3b pdf]
+\newline
+\newline
+$\bullet $"And": conjunction; 
+\newline
+$\bullet $"Or": disjunction (inclusive meaning of or). 
+\newline
+\newline
+[example in 3b pdf]
+\newline
+\newline
+\textbf{Definition. } Two proposition forms are logically equivalent if they have the same truth values for each possible allocation of truth values to variables in them.
+\newline
+Denote logical equivalence of $P$ and $Q$ by writing $P \Longleftrightarrow Q.$
+\newline
+\newline
+\textbf{De Morgan's Law. } $\sim(p \vee q) \Longleftrightarrow (\sim p) \land (\sim q).$
+\newline
+\newline
+[example in word]
+\newline
+\newline
+If RHS and LHS for particular statements have same truth values in all cases, then $p \land (q \vee r) \Longleftrightarrow (p \land q) \vee (p \land r).$ which is \textbf{ Distributive Law }.
+\newline
+\newline
+\textbf{Defition. } 
+\newline
+$\bullet $ Propositional form that is always true is called "tautology". 
+\newline
+$\bullet $ Proposition form that is always false is called "contradiction".  
+\newline
+$\bullet $ Proposition that is neither a tautology or a contradiction is called "contigency".
+\newline
+\newline
+\textbf{Example }
+\newline
+$\bullet $ $p \vee (\sim p)$ is tautology.
+\newline
+$\bullet $ $p \land (\sim p)$ is contradiction.
+\newline
+$\bullet $ $p \land q$ is a contigency.
+\newline
+\newline
+\textbf{Note. }
+\newline
+\newline
+$1) $ Any two tautologies/contradictions are logically equivalent, as they have same truth value for all cases.
+\newline
+$2) $ Conversely, if a proposition is equivalent to a tautology, then the proposition itself is a tautology.
+\newpage
+\subsection{Laws of logical equivalence}
+\textbf{Laws of logical equivalence. } let $p, q, r$ be propositional variables, let $T$ be tautology and $F$ a contradiction. Then:
+$$\sim (p \vee q) \Longleftrightarrow (\sim p) \land (\sim q),$$
+$$p \land (q \vee r) \Longleftrightarrow (p \land q) \vee (p \land r),$$
+$$p \vee (\sim p) \Longleftrightarrow T, (1)$$
+$$p \land (\sim p) \Longleftrightarrow F, (2)$$
+$$\sim(p \vee q) \Longleftrightarrow (\sim p) \land (\sim q) \text{ and } \overline{ A \cup B } = \bar{ A } \cap \bar{ B },$$
+$$p \vee (\sim p) \Longleftrightarrow T \text{ and } A \cup \bar{A} = \cal U,$$
+$$p \land (\sim p) \Longleftrightarrow F \text { and } A \cap \bar{A} = \emptyset.$$
+\textbf{Note. } $(1)$ and $(2)$ are dual pairs of logical equivalences.
+\newline
+\newline
+\textbf{Laws. (most useful logical equivalences)}
+\newline
+$\bullet $ Commutative Law:
+$$p \land q \Longleftrightarrow q \land p \text{ and } p \vee q \Longleftrightarrow q \vee p,$$
+\newline
+$\bullet $ Associative Law:
+$$(p \land q) \land r \Longleftrightarrow p \land (q \land r) \text{ and } (p \vee q) \vee r \Longleftrightarrow p \vee (q \vee r),$$
+\newline
+$\bullet $ Distributive Law:
+$$p \land (q \vee r) \Longleftrightarrow (p \land q) \vee (q \land r) \text{ and } p \vee (q \land r) \Longleftrightarrow (p \vee q) \land (q \vee r),$$
+\newline
+$\bullet $ Identity laws:
+$$p \land T \Longleftrightarrow p \text{ and } p \vee F \Longleftrightarrow p,$$
+\newline
+$\bullet $ Laws of negation:
+$$p \vee (\sim p) \Longleftrightarrow T \text{ and } p \land (\sim p) \Longleftrightarrow F,$$
+\newline
+$\bullet $ Double negation law:
+$$\sim(\sim p) \Longleftrightarrow p,$$
+\newline
+$\bullet $ Idempotent Laws:
+$$p \land p \Longleftrightarrow p \text{ and } p \vee p \Longleftrightarrow p,$$
+\newline
+$\bullet $ Domination Law:
+$$p \vee T \Longleftrightarrow T \text{ and } p \land F \Longleftrightarrow F,$$
+\newline
+$\bullet $ De Morgan's Law:
+$$\sim(p \land q) \Longleftrightarrow (\sim p) \vee (\sim q) \text{ and } \sim(p \vee q) \Longleftrightarrow (\sim p) \land (\sim q).$$
+\newline
+\newline
+[example in pdf 3b]
+\newline
+\newline
+\textbf{If \dots then.} $p \rightarrow q.$ or "$p$ implies $q$" or "if $p$ then $q$". (always true except when $p$ is true and $q$ is false).
+\newline
+\newline
+[truth table for logical equivalence involving $\rightarrow$ in pdf 3b + example]
+\newline
+\newline
+\textbf{Note. } Non-equivalence of two propositional forms would normally be very difficult to prove by "algebraic" methods.
+\newline
+\newline
+\textbf{If and only if. } Biconditional proposition $p \longleftrightarrow q$ is true when $p$ and $q$ are both true or both false, and is false otherwise (like when one is true and one is false, $p \longleftrightarrow q$ is false).
+$$p \longleftrightarrow q \Longleftrightarrow (p \rightarrow q) \land (q \rightarrow p).$$
+\newline
+\newline
+$\bullet $ $p \Longleftrightarrow q$ tells something about the two propositional forms;
+\newline
+$\bullet $ $p \longleftrightarrow q$ is a combination of the two propositional forms into a single form.\
+\newline
+\newline
+[theorem in 3b pdf + proof (for logical equivalence of two forms if and only if the forms in $\longleftrightarrow$ is a tautology.)]
+\newline
+\newline
+\textbf{Definition. } Let $P$, $Q$ be propositional forms. If $P$ is true, $Q$ is true. Then we can say $P$ logically implies $Q$ leading to $P \Longrightarrow Q.$
+\newline
+\newline
+[example in 3b pdf]
+\newpage
+\subsection{Valid and Invalid arguments}
+Argument: “If G is an Eulerian graph, then no vertex of G has odd degree.
+G is an Eulerian graph. Therefore, no vertex of G has odd degree.” is made using the rule of inference. 
+\newline
+$p \rightarrow q$
+\newline
+$p$
+\newline
+$\therefore \bar{q}.$
+\newline
+(q is just the result. yeah)
+\newline
+\newline
+Such an argument is always valid because the conclusion must always be true, provided hypotheses(earlier statements) are true.
+\newline
+\newline
+This rule of inference is aclled "modus ponens".
+\newline
+\newline
+Invalid inference example:
+\newline
+$p \rightarrow q$
+\newline
+$p$
+\newline
+$\therefore \overline{p}.$
+\newline
+\newline
+Since some cases can be true and some can be false.
+\newline
+\newline
+\textbf{Note. } Conclusion of a valid argument need not always be true. (for a true conclusion, we need a valid argument and true hypotheses).
+\newline
+\newline
+Modus Tollens:
+\newline
+$p \rightarrow q$
+\newline
+$\sim q$
+\newline
+$\therefore \overline{\sim p}.$
+\newline
+\newline
+[truth tables of modus ponens in 3b pdf]
+\newline
+\newline
+\begin{theorem}
+  An argument $P_1 P_2 \dots P_n \overline{Q}$ is valid if and only if $(P_1 \land \_2 \land \dots \land P_n) \Longrightarrow Q$ that is, if and only if the proposition $(P_1 \land \_2 \land \dots \land P_n) \longrightarrow Q$ is a tautology.
+\end{theorem}
+[proof in 3b pdf]
+\newline
+\newline
+\underline{Things to learn from proof: }
+\newline 
+$\bullet $ Structure of an "if and only if" proof.
+\newline
+$\bullet $ Proof by division into cases.
+\newline
+$\bullet $ Proof by contrapositive.
+\newline
+\newline
+[example in word]
+\newline
+\newline
+\begin{theorem}
+  The rule of inference: $(\sim p) \longrightarrow F \therefore p.$ is valid.
+\end{theorem}
+[proof in 3b pdf; formal verification of method by proof of contradiction]
+\newline
+\newline
+[problem in 3b pdf + solution]
 \newpage
 \end{document}
