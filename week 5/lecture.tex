@@ -702,6 +702,200 @@ $\bullet $ Rectangular array of numbers (a matrix) $M_R$ where entry in $i$th ro
 \newline
 $\bullet $arrow diagrams are sometimes called directed graphs or digraph.
 \newpage
+\subsection{Properties of Relations}
+\textbf{Reflexive Relation:}
+\newline
+\newline
+\boxed{\text{Reflexive iff $(x, x) \in R$ that is $x \space R \space x$}}
+\newline 
+\newline
+Drawn as:
+\newline
+$\bullet $ a loop in a vertex in directed graph
+\newline
+$\bullet $ main diagonal is all 1s
+\newline 
+\newline
+[example in slide 9 pdf]
+\newline
+\newline
+\textbf{Symmetric Relation:}
+\newline
+\newline
+\boxed{\text{Symmetric relation $R$ on set $A$ iff $(x, y) \in A$ that is $x \space R \space y$ implies $y \space R \space x$ }}
+\newline 
+\newline
+Drawn as:
+\newline
+$\bullet $ arrow pointing both ways (ie $x \leftrightarrow y$) in a directed graph
+\newline
+$\bullet $ matrix $M_R$ is symmetric about main diagonal. 
+\newline 
+\newline
+[example in slide 9 pdf]
+\newline
+\newline
+\textbf{Antiymmetric Relation:}
+\newline
+\newline
+\boxed{\text{Antiymmetric relation $R$ on set $A$ iff $(x, y) \in A$ if both $x \space R \space y$ and $y \space R \space x$ then $x = y$.}}
+\newline 
+\newline
+Drawn as:
+\newline
+$\bullet $ arrow pointing both ways (ie $x \leftrightarrow y$) in a directed graph should NEVER appear
+\newline
+$\bullet $ matrix $M_R$ if $i \not = j$, then either $m_{ij} = 0$ or $m_{ji} = 0$ (or both).
+\newline 
+\newline
+[example in slide 9 pdf]
+\newline
+\newline
+\textbf{Transitive Relation:}
+\newline
+\newline
+\boxed{\text{Transitive relation $R$ on set $A$ iff for all $x, y, z \in A$, if both $x \space R \space y$ and $y \space R \space x$ then $x \space R \space Z.$}}
+\newline 
+\newline
+Drawn as:
+\newline
+$\bullet $ arrow pointing (ie $x \rightarrow y \rightarrow z; x \rightarrow z$) and (if $x \rightarrow y$ then $x$ and $y$ must be reflexive) in a directed graph
+\newline
+$\bullet $ matrix $M_R$, each non-zero entry in $M^2_R$ is also a non-zero in $M_R$. 
+\newline 
+\newline
+[example in slide 9 pdf]
+\newline
+\newline
+Transitive closure: adding all relative transitive pairs together. 
+\newpage
+\subsection{Equivalence Relations}
+\textbf{Equivalence Relation. } iff it is reflexive, symmetric and transitive. I.e;
+\newline
+\newline
+$\bullet $ For all $x \in A, x \sim x$;
+\newline
+$\bullet $ For all $x, y \in A, x \sim y \text{ implies } y \sim x$;
+\newline
+$\bullet $ For all $x, y, z \in A, x \sim y \text{ and } y \sim z \text{ implies } x \sim z.$
+\newline
+\newline
+($\sim$: equivalent; equivalent under $\sim$; congruence modulo $m$ is an equivalence relation)
+\newline
+\newline
+[example in slide 10 pdf]
+\newline
+\newline
+\textbf{Equivalence class. } Setting $\sim$ be an equivalence relation on set $A$; $a \in A$; equivalence class $[a]$:
+\newline
+\newline
+\boxed{[a] = \{x \in A: x \sim a\}}
+\newline
+\newline
+set of all elements that are equivalent to $a$.
+\newline
+\newline
+[example in slide 10 pdf]
+\newline
+\newline
+\textbf{Theorem: } Set of equivalence classes of $A$ under equivalence relation on $A$ is a partition of $A$;
+\newline
+$(i) $ $A$ is the union of all the equivalence classes and 
+\newline 
+$(ii) $ different equivalence classes are disjoint.
+\newline
+\newline
+[proof + examples in slide 10 pdf]
+\newline
+\newline
+\textbf{Natural representative. } finding the simplest member of each equivalence class. (could be smallest); set of natural representatives is \textbf{ quotient set. }
+\newline
+\newline
+[example in slide 10 pdf]
+\newpage
+\subsection{Partial Orders}
+\textbf{Partial order } iff it is reflexive, antisymmetric and transitive. I.e;
+\newline
+\newline
+$\bullet $ For all $x \in A, x \sim x$;
+\newline
+$\bullet $ For all $x, y \in A, x \sim y \text{ and } y \sim x \text{ implies } x = y$;
+\newline
+$\bullet $ For all $x, y, z \in A, x \sim y \text{ and } y \sim z \text{ implies } x \sim z.$
+\newline
+\newline
+\boxed{\text{$\preceq$: precedes; used to denote a partial order}}
+\newline
+\newline
+\boxed{\text{For $a, b$ where atleast $a \preceq b$ or $b \preceq a$, it is called total order.}}
+\newline
+\newline
+[example in slide 11 pdf]
+\newline
+\newline
+\textbf{Posets. } Posets (partially ordered sets) is a set $A$ togehter with $\preceq$, denoted by $(A, \preceq)$. For poset $(A, \preceq)$
+\newline
+$\bullet $ If $a \preceq b$ then $a$ is a predecessor of $b$.
+\newline
+$\bullet $ If $a \preceq b$ but $a \not = b$ (ie $a \prec b$) then we say $a$ strictly precedes $b$. 
+\newline
+$\bullet $ We say $a$ is an immediate predecessor of $b$ iff $a \prec b$ and there is no $c \in A$ such that $a \prec c \prec b.$ 
+\newline
+$\bullet $ Elements $a, b$ are comparable if either $a \preceq b$ or $b \preceq a$. Otherwise, $a, b$ are incomparable.
+\newline
+\newline
+Set with total order is called totally ordered set (total order is partial order when any two elements are comparable).
+\newline
+\newline
+[example in slide 11 pdf]
+\newline
+\newline
+\textbf{Hasse Diagrams. } Small poset with directed graph:
+\newline
+$\bullet $ Elements of $A$ are drawn as vertices.
+\newline
+$\bullet $ No loops drawn to indicate $a \preceq a$ (is already assumed).
+\newline
+$\bullet $ If $a \prec b$ then $a$ is drawn longer than $b$ (assume all arrow point upwards).
+\newline
+$\bullet $ If $a$ is an immediate predecessor of $b$ then upwards line is drawn from $a$ to $b$.
+\newline
+$\bullet $ Any line that can be deduced from transitivity is omitted.
+\newline
+\newline
+[example in slide 11 pdf]
+\newline
+\newline
+\textbf{Further definitions. } Let $(A, \preceq)$ be a poset.
+\newline 
+$\bullet $ Maximal: $a \in A$ if no $b \in A$ with $a \prec b$.
+\newline 
+$\bullet $ Minimal: $a \in A$ if no $b \in A$ with $b \prec a$
+\newline 
+$\bullet $ Greatest Element: $a \in A$ iff for all $b \in A, b \preceq a$.
+\newline 
+$\bullet $ Least Element: $a \in A$ iff for all $b \in A, a \preceq b$.
+\newline 
+\newline
+\textbf{Note. } slight difference between greatest element and maximal element.
+\newline 
+\newline
+[example in slide 11 pdf]
+\newline 
+\newline
+Suppose $(A, \preceq)$ and $S \subseteq A$. Then: 
+\newline
+$\bullet $ Upper Bound of $S$: $a \in A$ if $s \preceq a \forall s \in S$.
+\newline
+$\bullet $ Lower Bound of $S$: $a \in A$ if $a \preceq s \forall s \in S$.
+\newline
+$\bullet $ Least Upper Bound of $S$: $a \in A$ if it is an upper bound for $S$ and for every otehr upper bound $b$ of $S, a \preceq b$.
+\newline
+$\bullet $ Greatest Lower Bound of $S$: $a \in A$ if it is a lower bound for $S$ and for every otehr lower bound $b$ of $S, b \preceq a$.
+\newline 
+\newline 
+[example in slide 11 pdf]
+\newpage
 \section{Logic and Proofs}
 \subsection{Introduction to Logic and Proofs}
 Mathematical proof: consists of logical deduction on the basis of agreed premises. Apart from human error the results are certain.

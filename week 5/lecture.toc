@@ -23,25 +23,28 @@
 \contentsline {subsection}{\numberline {2.5}Modular Arithmetic}{25}{}%
 \contentsline {subsection}{\numberline {2.6}Congruence Equations}{26}{}%
 \contentsline {subsection}{\numberline {2.7}Relations}{27}{}%
-\contentsline {section}{\numberline {3}Logic and Proofs}{29}{}%
-\contentsline {subsection}{\numberline {3.1}Introduction to Logic and Proofs}{29}{}%
-\contentsline {subsection}{\numberline {3.2}Example of Proofs}{30}{}%
-\contentsline {subsection}{\numberline {3.3}Further Examples fo Proofs}{31}{}%
-\contentsline {subsection}{\numberline {3.4}Generalisation and 'All' Statements}{32}{}%
-\contentsline {subsection}{\numberline {3.5}Exhaustion of Cases}{33}{}%
-\contentsline {subsection}{\numberline {3.6}Writing Proofs}{34}{}%
-\contentsline {subsection}{\numberline {3.7}Converse; If and Only if}{35}{}%
-\contentsline {subsection}{\numberline {3.8}"Some" Statements}{36}{}%
-\contentsline {subsection}{\numberline {3.9}"Some" statements confused}{37}{}%
-\contentsline {subsection}{\numberline {3.10}Multiple Quantifiers}{38}{}%
-\contentsline {subsection}{\numberline {3.11}Multiple quantifiers continued (limits)}{39}{}%
-\contentsline {subsection}{\numberline {3.12}Change of order of quantifiers}{40}{}%
-\contentsline {subsection}{\numberline {3.13}"Not" and contradiction}{41}{}%
-\contentsline {subsection}{\numberline {3.14}Contrapositive}{42}{}%
-\contentsline {subsection}{\numberline {3.15}More examples of negation and negation of}{43}{}%
-\contentsline {subsection}{\numberline {3.16}Mathematical induction 1}{44}{}%
-\contentsline {subsection}{\numberline {3.17}Mathematical Induction 2}{45}{}%
-\contentsline {subsection}{\numberline {3.18}Logic}{46}{}%
-\contentsline {subsection}{\numberline {3.19}Truth Tables}{47}{}%
-\contentsline {subsection}{\numberline {3.20}Laws of logical equivalence}{48}{}%
-\contentsline {subsection}{\numberline {3.21}Valid and Invalid arguments}{50}{}%
+\contentsline {subsection}{\numberline {2.8}Properties of Relations}{29}{}%
+\contentsline {subsection}{\numberline {2.9}Equivalence Relations}{30}{}%
+\contentsline {subsection}{\numberline {2.10}Partial Orders}{31}{}%
+\contentsline {section}{\numberline {3}Logic and Proofs}{33}{}%
+\contentsline {subsection}{\numberline {3.1}Introduction to Logic and Proofs}{33}{}%
+\contentsline {subsection}{\numberline {3.2}Example of Proofs}{34}{}%
+\contentsline {subsection}{\numberline {3.3}Further Examples fo Proofs}{35}{}%
+\contentsline {subsection}{\numberline {3.4}Generalisation and 'All' Statements}{36}{}%
+\contentsline {subsection}{\numberline {3.5}Exhaustion of Cases}{37}{}%
+\contentsline {subsection}{\numberline {3.6}Writing Proofs}{38}{}%
+\contentsline {subsection}{\numberline {3.7}Converse; If and Only if}{39}{}%
+\contentsline {subsection}{\numberline {3.8}"Some" Statements}{40}{}%
+\contentsline {subsection}{\numberline {3.9}"Some" statements confused}{41}{}%
+\contentsline {subsection}{\numberline {3.10}Multiple Quantifiers}{42}{}%
+\contentsline {subsection}{\numberline {3.11}Multiple quantifiers continued (limits)}{43}{}%
+\contentsline {subsection}{\numberline {3.12}Change of order of quantifiers}{44}{}%
+\contentsline {subsection}{\numberline {3.13}"Not" and contradiction}{45}{}%
+\contentsline {subsection}{\numberline {3.14}Contrapositive}{46}{}%
+\contentsline {subsection}{\numberline {3.15}More examples of negation and negation of}{47}{}%
+\contentsline {subsection}{\numberline {3.16}Mathematical induction 1}{48}{}%
+\contentsline {subsection}{\numberline {3.17}Mathematical Induction 2}{49}{}%
+\contentsline {subsection}{\numberline {3.18}Logic}{50}{}%
+\contentsline {subsection}{\numberline {3.19}Truth Tables}{51}{}%
+\contentsline {subsection}{\numberline {3.20}Laws of logical equivalence}{52}{}%
+\contentsline {subsection}{\numberline {3.21}Valid and Invalid arguments}{54}{}%
