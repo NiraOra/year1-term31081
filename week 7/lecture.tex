@@ -1928,4 +1928,89 @@ If $A_1 = {\text{ students in MATH}1081 }, A_2 = {\text{ students enrolled in MA
 \newline
 It is not clear that $A_1 \cap A_2 = \null,$ so the addition principle does not apply.
 \newpage
+\subsection{Warm-up example words in alphabet}
+\textbf{Example: }
+\newline 
+\textbf{1. How many 3 letter words are there in an alphabet?}
+\newline
+\newline
+$A) $ (Choices for letter 1): $26 \times $ (Choices for letter two): $26 \times$ (Choices for letter three): $26  = 26^3.$
+\newline
+\newline
+\textbf{2. How many 3 letter workds contain exactly one vowel?}
+\newline
+\newline
+$A) $ Choices for letter one times choices for letter two times choices for letter $3$ but with $3$ cases, where: 
+\newline
+$(i) $ vowel position $1$: $5 \times 21 \times 21.$
+\newline
+$(ii) $ vowel position $2$: $21 \times 5 \times 21.$
+\newline
+$(iii) $ vowel position $3$: $21 \times 21 \times 5.$
+\newline
+Total $ = 5 \times 21 \times 21  + 21 \times 5 \times 21 + 21 \times 21 \times 5,$
+\newline
+$ = 3 \times 5 \times 21 \times 21.$ (where it could be (number of combinations) times (number of words with one vowel); if all the combinations are the same).
+\newline
+\newline
+\textbf{3. How many 3 letter words come before 'EGG' in alphabetical order?}
+\newline
+\newline
+$A) $ 3 ways to do so:
+\newline
+\newline
+$(i) $ First letter is $A, B, C$ or $D$.
+\newline
+$(ii) $ First letter is $E$ and second letter is $A, B, C, D, E$ or $F$.
+\newline
+$(iii) $ First letter $E$, second $G$, and third letter is $A, B, C, D, E$ or $F$.
+\newline
+\newline
+$(i)$ = $4 \times 26 \times 26$
+\newline
+$(i)$ = $1 \times 6 \times 26$
+\newline
+$(i)$ = $1 \times 1 \times 6$
+\newline
+Total $ = (4 \times  26 \times 26) + (1 \times 6 \times 26) + (1 \times 1 \times 6),$
+\newpage
+\subsection{Ordered selection with repetition}
+\textbf{Example: }
+\textbf{1. How many 3 letter words are there in an alphabet?}
+\newline
+\newline
+A three letter word can be thought of as a function: $w:  \{ 1, 2, 3 \} \rightarrow \{ A, B, C, \dots, Z\}.$ where $w(i) = $ letter in $i^{th}$ position.
+\newline
+\newline
+\begin{theorem}
+  Ordered Selection with repetition: Given two finite sets $N$ and $M$ whose
+  coordinates are: $\text{ | } N \text{ | } = n$ and $\text{ | } M \text{ | } = m,$
+  \newline
+  Number of functions $f: N \rightarrow M$ is given by: $\text{Fun }(N, M) = m^n$.
+\end{theorem}
+\textbf{Note. } secretly think of $N$ as the set of positions of selection $\{ 1, 2, 3, \dots, n\}.$
+\newline
+\newline
+\textbf{Proof. } Let elements of $N$ be called $N = \{ 1, 2, 3, \dots, n \}.$
+\newline
+\newline
+Given $m := (m_1, \dots m_n) \in M \times M \times \dots \times M.$
+\newline
+Define $f_{\underline{m}}: N \rightarrow M$ by $f_{\underline{m}}:i \rightarrow m_i.$
+\newline
+Gives a function of $g: M \times M \times \dots \times M \rightarrow \text{Fun }(N, M); \text{ } g: \underline{m} \rightarrow f_{\underline{m}}.$
+\newline
+\newline
+Note for $f \in  \text{Fun }(N, M)$ define $\underline{b}_{f} := (f(1), f(2), \dots, f(n)) \in M \times M \times \dots \times M (n \text{ times }),$
+\newline
+This gives a function $h: \text{Fun }(N, M) \rightarrow M \times M \times \dots \times M.$
+\newline
+Now (check) $h \circ g = id_{M \times M \times \dots \times M}$ and $g \circ h = id_{M \times M \times \dots \times M},$
+\newline
+\newline
+so $h$ is a bijection with inverse $g$.
+\newline
+\newline
+Therefore, $\text{ | } \text{Fun }(N, M) \text{ | } = \text{ | } M \times M \times \dots \times M \text{ | } = m^n,$ (by defition of multiplication principle).
+\newpage
 \end{document}

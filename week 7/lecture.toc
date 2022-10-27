@@ -52,3 +52,5 @@
 \contentsline {subsection}{\numberline {4.1}Brief Introduction 1}{56}{}%
 \contentsline {subsection}{\numberline {4.2}Addition and Multiplication Principles}{57}{}%
 \contentsline {subsection}{\numberline {4.3}A remark on the addition principle}{58}{}%
+\contentsline {subsection}{\numberline {4.4}Warm-up example words in alphabet}{59}{}%
+\contentsline {subsection}{\numberline {4.5}Ordered selection with repetition}{60}{}%
