@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.8.24)  28 OCT 2022 00:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.8.24)  28 OCT 2022 21:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1875,7 +1875,107 @@ Underfull \hbox (badness 10000) in paragraph at lines 1991--2015
 
  []
 
-[60] (./lecture.aux) ) 
+[60]
+Underfull \hbox (badness 10000) in paragraph at lines 2017--2039
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2017--2039
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2017--2039
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2017--2039
+
+ []
+
+
+Overfull \hbox (10.80052pt too wide) in paragraph at lines 2039--2041
+\OT1/cmr/bx/n/10 Theorem 8. \OT1/cmr/m/it/10 Re-ar-rang-ing dis-tinct ob-jects: Given fi-nite set $\OML/cmm/m/it/10 N$ \OT1/cmr/m/it/10 so that: $[]\OML/cmm/m/it/10 N[] \OT1/cmr/m/n/10 =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2042--2058
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2042--2058
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2042--2058
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2042--2058
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2062--2066
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2066--2079
+
+ []
+
+
+Overfull \hbox (31.04861pt too wide) in paragraph at lines 2066--2079
+\OT1/cmr/m/n/10 By in-duc-tion on $[]\OML/cmm/m/it/10 N[]; f[]N[] \OT1/cmr/m/n/10 = 1\OML/cmm/m/it/10 ;$ \OT1/cmr/m/n/10 then $[]\OML/cmm/m/it/10 R[] \OT1/cmr/m/n/10 = 1$ and $[][](\OML/cmm/m/it/10 R; N\OT1/cmr/m/n/10 )[] =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2066--2079
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2066--2079
+
+ []
+
+[61]
+Underfull \hbox (badness 10000) in paragraph at lines 2079--2100
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2079--2100
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2079--2100
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2079--2100
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2079--2100
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2079--2100
+
+ []
+
+[62] (./lecture.aux) ) 
 Here is how much of TeX's memory you used:
  2585 strings out of 478268
  42399 string characters out of 5846347
@@ -1883,12 +1983,12 @@ Here is how much of TeX's memory you used:
  20758 multiletter control sequences out of 15000+600000
  483412 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,9n,62p,367b,216s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 55i,9n,62p,379b,216s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on lecture.pdf (60 pages, 300634 bytes).
+Output written on lecture.pdf (62 pages, 307745 bytes).
 PDF statistics:
- 284 PDF objects out of 1000 (max. 8388607)
- 186 compressed objects within 2 object streams
+ 291 PDF objects out of 1000 (max. 8388607)
+ 191 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
