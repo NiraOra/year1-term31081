@@ -56,3 +56,5 @@
 \contentsline {subsection}{\numberline {4.5}Ordered selection with repetition}{60}{}%
 \contentsline {subsection}{\numberline {4.6}Ordered selection without repetition}{61}{}%
 \contentsline {subsection}{\numberline {4.7}Example ordered selection without repetition}{63}{}%
+\contentsline {subsection}{\numberline {4.8}Remark challenging counting problems}{64}{}%
+\contentsline {subsection}{\numberline {4.9}Examples counting up to symmetries}{65}{}%
