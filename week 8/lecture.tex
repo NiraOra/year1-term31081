@@ -2172,4 +2172,142 @@ class contains elements.
 \newline
 Therefore, number of rearrangements of "CHEESE" is $\frac{6!}{3!}.$
 \newpage
+\subsection{Unordered selection without repetition}
+\begin{theorem}
+  Unordered selection without repetition: Given a finite set $\text{ | }N\text{ | } = n$ and an
+  integer $r$ with $0 \leq r \leq n$, the number of subsets $R \subset N$ so that $\text{ | }R\text{ | } = r$ is
+  given by:
+  $$\binom{n}{r} = \frac{n!}{(n - r)!r!},$$ where $\binom{n}{r}$ is known as $n$ choose $r$.
+\end{theorem}
+\textbf{Proof. } Take $R$ to be a set so that $\text{ | }R\text{ | } = r$. 
+\newline
+Consider $S := \{ f: R \rightarrow S \text{ | } f \text{ is injective}\}$ and define a relation $\sim$ on $S$:
+$$f \sim g \text{ iff image}(f) = \text{image}(g).$$
+$(i) $ Note $\sim$ is an equivalence relation 
+\newline
+$(ii) $ $\{\text{equiv classes of }\sim \rightarrow \text{subsets of } N \text{of size } r\}$
+$$f: R \rightarrow S \rightarrow \text{image}(f)$$ is bijective.
+\newline
+$(iii) $ $f \sim g$ iff there is a unique bijection $h: R \rightarrow R$ so that $f \circ h = g$.
+$$\text{Subset of} N \text{of size} r = \frac{\not = \text{injections } R \rightarrow S}{\not = \text{bijections } R \rightarrow S} = \frac{n!}{(n - r)!r!}.$$
+\newpage
+\subsection{Examples unordered selection without repetition}
+\textbf{Remark. } Counting subsets of a finite set is counting number of unordered elements in the same subset.
+\newline
+\newline
+\textbf{Example. } How many $13$ card hands have exactly $7$ of one suit and $6$ of another?
+\newline
+$A) $ = Choices of suits to pick for $7$ cards $\times $ Choices of $7$ unordedred cards in a given suit 
+$\times $ choices fo suits to pick six cards from $\times $ choices of $6$ unordered cards in a given suit.
+$$ = 4 \times \binom{13}{7} \times 3 \times \binom{13}{6}.$$
+\textbf{Example. } How many $13$ card hands contain $4$ cards in each of the two suits and $5$ in another?
+\newline
+$A) $ Choices of suits to pick $5$ cards from $\times $ number of $5$ cards in a given suit $\times $ choices of suits to pick $4$ cards from 
+$\times $ pick four cards from one of the suits $\times $ pick four cards from the other suit
+$$ = 4 \times \binom{13}{5} \times \binom{3}{2} \times \binom{13}{4} \times \binom{13}{4} .$$
+\newpage
+\subsection{Binomial theorem}
+\begin{theorem}
+  let $n$ be a non negative integer. Then,
+  $$(x + y)^n = \sum_{r = 0}^{n} \binom{n}{r} x^ry^{n - r}.$$
+\end{theorem}
+\textbf{Proof. } (idea)
+$$(x + y)^n = (x + y) \times \dots \times (x + y) (n \text{times}).$$
+Only way to obtain a term $x^ry^{n - r}$ is to choose $x$ coming from $r$ of these factors. 
+\newline
+\newline
+Corresponds to choosing a subset of size $r$ in a set of size $n$. Therefore, number of such terms in this expression is $\binom{n}{r}.$
+\newpage
+\subsection{Properties of binomial coefficients}
+$(i) $ \textbf{Proposition. } Let $r$ and $n$ be in integers so $0 \leq r \leq n.$ So:
+$$\binom{n}{r} = \binom{n}{n - r}.$$
+$(ii) $ \textbf{Proposition. } Let $r$ and $n$ be in integers so $1 \leq r \leq n + 1.$ So:
+$$\binom{n + 1}{r} = \binom{n}{r} + \binom{n}{r - 1},$$ known as pascal's triangle.
+\textbf{Proof.} 
+\newline
+$$\binom{n}{r} + \binom{n}{r - 1} = \frac{n!}{(n - (r - 1))!(r - 1)!} + \frac{n!}{(n - r)!r!},$$
+$$ = \frac{n!r}{(n - (r - 1))!r!} + \frac{n!(n - (r - 1))}{(n - (r - 1)!r!)},$$
+$$ = \frac{n!(r + n - r + 1)}{((n - 1) - r)!r!} = \frac{n!(n + 1)}{((n + 1) - r)!r!},$$
+$$ = \binom{n + 1}{r}.$$
+\newpage
+\subsection{Another example of unordered selection without repetition}
+\textbf{Example. } How many length $8$ biy strings contain at least $6$ ones?
+$i) $ How many such string contain exactly $6$ ones?
+$$\binom{8}{6}.$$
+$ii) $ How many such string contain exactly $7$ ones?
+$$\binom{8}{7}.$$
+$iii) $ How many such string contain exactly $8$ ones?
+$$\binom{8}{8}.$$
+Strings with at least $6$ ones $ = \binom{8}{6} + \binom{8}{7} + \binom{8}{8}.$ 
+\newline
+\newline
+The equivalent is to asking how many b$8$ bit strings contain at most $2$ zeroes.
+\newline
+$i) $ How many such string contain $2$ zeroes?
+$$\binom{8}{2}.$$
+$ii) $ How many such string contain $1$ zeroes?
+$$\binom{8}{1}.$$
+$iii) $ How many such string contain no zeroes?
+$$\binom{8}{0}.$$
+Strings with at most $2$ zeroes $ = \binom{8}{2} + \binom{8}{1} + \binom{8}{0}.$ 
+\newpage
+\subsection{Integer solutions to summation equation}
+\textbf{Example. } If Tony went to buy 4 scoops of ice cream, in which the flavours available are
+pistachio, chocolate and salted caramel, if Tarig would like to try each flavour, how many
+possible combinations are there?
+\newline
+\newline
+$A) $ Same as asking number of solutions to $x_1 + x_2 + x_3 = 4, x_i \in \mathbb{N} \cup \{ 0 \}.$
+\newline
+Assume $x \geq 1.$ Equivalent of asking how many ways we can group $4$ ice creams into $3$ groups. Doing so, we get
+$2 + 1 + 1 = 4;$ given by $\binom{4 - 1}{3 - 1} = \binom{3 }{2};$ where $3$ is gaps between sticks and $2$ is dividers required.
+\newline
+\begin{theorem}
+  Let $r \leq n$ be positive integers. Then, the number of positive integers
+  ($0$ not included) solutions of
+  $$x_1 + x_2 + \dots + x_r = n,$$
+  is given by $\binom{n - 1}{r - 1}.$
+\end{theorem}
+(proof in topic 4 pdf)
+\newline
+\newline
+\begin{theorem}
+  Let $r \leq n$ be positive integers. Then, the number of non negative integers
+  ($0$ included) solutions to 
+  $$y_1 + y_2 + \dots + y_r = n,$$
+  is $\binom{n + r - 1}{r - 1}$.
+\end{theorem}
+\textbf{Proof. } Define $x_i = y_i + 1$ then $x_i \geq 1$. 
+\newline
+Substituting $y_i = x_i - 1$ into the equations, we get $(y_1 - 1) + (y_2 - 2) + \dots + (y_r - 1) = n,$
+\newline
+equivalent to
+$$y_1 + y_2 + \dots + y_r = n + r.$$
+\newpage
+\subsection{Example integer solutions}
+\textbf{Note. }Counting solutions is not the same as counting portions of $n$.
+\newline
+\newline
+\textbf{Example. } How many different solutions are there to:
+$x_1 + x_2 + x_3 = 11$ so that $x_i \in \mathbb{Z}$ and 
+\newline
+\newline
+$(i) $ $x_i \geq 0, n = 11, r = 3$
+\newline
+$A) $ $\binom{11 + 3 - 1}{3 - 1} = \binom{13}{2}.$
+\newline
+$(ii) $ $x_i \geq -5$. Substitute $x_r = y_i - 5$ 
+\newline
+$A) $ $y_1 + y_2 + y_3 = 26, y_i \geq 0.$
+\newline
+$$\binom{28}{2}.$$
+$(iii) $ $0 \leq x_i \leq 5$ substitute $x_i = -y_i + 5$
+\newline
+$y_1 + y_2 + y_3 = 4, 0 \leq y_i \leq 5.$
+$$ \binom{6}{2}. (\text{ignore }5)$$
+$(iv) $ $0 \leq x_i \leq 7$ substitute $x_i = -y_i + 7$
+\newline
+$y_1 + y_2 + y_3 = 10, 0 \leq y_i \leq 7.$
+Here, theorem doesn't apply.
+\newpage
 \end{document}
