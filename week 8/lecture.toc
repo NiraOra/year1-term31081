@@ -65,3 +65,4 @@
 \contentsline {subsection}{\numberline {4.14}Another example of unordered selection without repetition}{70}{}%
 \contentsline {subsection}{\numberline {4.15}Integer solutions to summation equation}{71}{}%
 \contentsline {subsection}{\numberline {4.16}Example integer solutions}{72}{}%
+\contentsline {subsection}{\numberline {4.17}Inlcusion - Exclusion Principle}{73}{}%

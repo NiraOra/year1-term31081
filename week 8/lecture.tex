@@ -2310,4 +2310,21 @@ $(iv) $ $0 \leq x_i \leq 7$ substitute $x_i = -y_i + 7$
 $y_1 + y_2 + y_3 = 10, 0 \leq y_i \leq 7.$
 Here, theorem doesn't apply.
 \newpage
+\subsection{Inlcusion - Exclusion Principle}
+\begin{theorem}
+  Inclusion - Exclusion Principle:  Let $A_1, \dots, A_n$ be a finite 
+  list of finite sets. Define:
+  $$S_1 = \sum_{i} = \text{ | } A_i \text{ | },$$
+  $$S_2 = \sum_{i_1 < i_2} = \text{ | } A_{i_1} \cap A_{i_2} \text{ | },$$
+  $$ \dots $$
+  $$S_n = \text{ | } A_{i_1} \cap \dots \cap A_{i_n} \text{ | }.$$
+  \newline
+  \newline
+  Then, $\text{ | } A_1 \cap \dots \cap A_n \text{ | } = \sum_{r = 1}^{n} (-1)^{r + 1} S_k.$
+\end{theorem}
+\textbf{Remark. } Refinement of the addition principle. 
+\newline
+\newline
+[proof in topic 4 pdf]
+\newpage
 \end{document}
