@@ -66,3 +66,8 @@
 \contentsline {subsection}{\numberline {4.15}Integer solutions to summation equation}{71}{}%
 \contentsline {subsection}{\numberline {4.16}Example integer solutions}{72}{}%
 \contentsline {subsection}{\numberline {4.17}Inlcusion - Exclusion Principle}{73}{}%
+\contentsline {subsection}{\numberline {4.18}Example inclusion exclusion principle}{74}{}%
+\contentsline {subsection}{\numberline {4.19}Example inclusion exclusion and integer solutions}{75}{}%
+\contentsline {subsection}{\numberline {4.20}Aside topological inclusion exclusion}{76}{}%
+\contentsline {subsection}{\numberline {4.21}Miscellaneous Examples}{77}{}%
+\contentsline {subsection}{\numberline {4.22}The pigeonhole principle}{79}{}%
