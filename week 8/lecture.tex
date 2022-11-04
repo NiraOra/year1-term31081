@@ -2477,4 +2477,339 @@ $$\binom{11 + 3 - 1}{3 - 1} = \binom{13}{2}.$$
 \end{theorem}
 (proof in topic 4: corollary)
 \newpage
+\subsection{Examples PHP (Pigeon Hole Principle)}
+\textbf{Examples. }
+\newline
+\newline
+$1) $ A martian has an infinite supply of red, green, blue and yellow
+socks in his drawer. How many does he need to draw out in order to guarentee
+he has a pair?
+\newline
+\newline
+$A) $ Pigeonhole principle (PHP) ensures he has $2$ socks of the smae colour if draws $ > $ colours $ = 4$.
+Therefore, the smallest such possible number of draws is $5.$
+\newline
+\newline
+$2) $ Take $S \subset \mathbb{Z}$ s.t. $\text{ | } S \text{ | } = n + 1.$ Show that 
+$\exists s_1, s_2 \in S$ s.t. $n \text{ | } (S_2 - S_1).$
+\newline
+\newline
+$A) $ Consider the function $f: S \rightarrow \{ 0, 1, 2, \dots , n - 1\}$ given by taking residue 
+$\text{ mod } n$. Then since $\text{ | } S \text{ | } > \text{ | } \{ 0, 1, \dots , n - 1\}\text{ | }$. The PHP gives 
+gives that $f$ is not injective. So, $\exists s_1 \not = s_2$ s.t. $f(s_1) = f(s_2).$
+$$ => (s_2 - s_1) = 0 (\text{mod} n),$$
+$$ => n \text{ | } (s_2 - s_1).$$
+$3) $ Pick $4$ distinct integers from $\{ 1, 2, \dots, 6 \}$ then there must be $2$ of them whose sum is $7$.
+\newline
+\newline
+$A) $ \textbf{Proof. } Split $\{ 1, 2, \dots , 6\}$ into subsets 
+$$\{ 1, 6\}, \{ 2, 5\}, \{ 3, 4 \} (\star).$$
+Note that the elements in each of these sum up to $7$. Since $4 > 3$, the PHP gives that at least two
+of the numbers picked must live in one of the subsets in $(\star)$. Hence, the result.
+\newline
+\newline
+$4) $ In a party of $20$ people, at least two have the same number of friends among the $20$. 
+\newline
+\newline
+$A) $ In such a party there can't be two people who know $0$ and $19$ people, respectively. 
+\newline 
+Therefore, the number of possibilities for friends is $19$. 
+\newline
+Since $20 > 19,$ the PHP then gives us that there are at least two people with the same number of friends.
+\newline
+\newline
+$5) $ Take the square of side length $2$. Place $5$ points on it at random. Show that they must lie within $sqrt(2)$ of each other.
+\newline
+\newline
+$A) $ Split the squares as above into $6$ regions. Then, two points must lie in the same region 
+by PHP. Noting that the distance between any two points in the same region is $\leq sqrt(2)$ gives the result. 
+\newline
+\newline
+$6) $ Choose $n + 1$ numbers from $\{ 1, 2, \dots 2n \}$ show that two of the chosen must be coprime. 
+\newline
+\newline
+$A) $ Split the set $\{1, 2, \dots 2n \}$ into $n$ subsets $\{1, 2\}, \{3, 4\} \dots, \{2n - 1, 2n\}$  then at least
+two will live in the same subset $\{k, k + 1\}$ but $\text{gcd}(k, k + 1) = 1$. This gives the result.
+\newpage
+\subsection{Generalised pigeon hole} 
+\begin{theorem}
+  Let $f: A \rightarrow B$ be a function so that $\text{ | } A \text{ | } = r$ and $\text{ | } B \text{ | } = n.$ 
+  For $b \in B$ let 
+  $$f^{-1}(b) := \{ a \in A \text{ | } f(a) = b\}.$$
+  Then $\exists b \in B \text{ s.t. },$
+  $$\text{ | } f^{-1}(b) \text{ | } \geq \lceil \frac{r}{n} \rceil.$$
+\end{theorem}
+\textbf{Example. } Amongst $100$ people at least $9$ are born in the same month.
+\newline
+\newline
+$A) $ $A := \{ \text{people} \}: \text{ | } A \text{ | } = 100; B := \{\text{months of the year}\}: \text{ | } B \text{ | } = 9.$
+$$f: A \rightarrow B,$$
+$$\text{person} \rightarrow \text{birth month},$$
+$$\text{Since } \lceil \frac{100}{12} \rceil = 9,$$
+GPHP gives $\exists$ month so that there are at least $9$ people born in it. 
+\newpage
+\subsection{Examples GPHP (Generalised Pigeon Hole Principle)}
+\textbf{Examples. } 
+\newline
+\newline
+$1) $ $33$ squares in a standard $8 \times 8$ chess board are coloured red. Show that there must be $3$ that form
+an L-shape. 
+\newline
+\newline
+$A) $ Divide the board into $16$ regions of size $2 \times 2$.
+\newline
+The GPHP gives that there is a region with at least $\lceil \frac{33}{16} \rceil = 3,$ colored squares.
+\newline
+Therefore, the region must contain an L-shape.
+\newline
+\newline
+$2) $ Prof. Craw wants all students in his class to have the same birthday. He is not allowed to have less than $30$ students. What is the least number 
+of students that must enroll for him to guarentee that $30$ have the same birthday.
+\newline
+\newline
+$A) $ By GPHP we seek x s.t. 
+$$\lceil \frac{x}{366} \rceil = 30,$$
+$$x = (366 \times 29) + 1\text{students.}$$
+\newpage
+\subsection{Warm up and notation recurrence}
+\textbf{Recurrence. } Motivating Example:
+\newline
+\newline
+What is the number of strings of length $n$ in $0$s and $1$s that don't contain `$111$` as a subword?
+\newline
+$A) $ Any word as above must end in either $0, 01, 011$. Deleting the possible endings gives us words of length $n - 1, n - 2, n - 3$ that do not contain $111$. If $a_n$ the answer we seek, 
+then $a_n = a_{n - 1} + a_{n - 2} + a_{n - 3}.$
+\newline
+\newline
+\begin{theorem}
+  Let $a_n$ be a sequence of natural numbers. An equation expressing $a_n$ in terms of $a_{n - 1}, a_{n - 2}, a_{n - 3}, \dots, a_{n - k}$
+  is called reccurence relation of order $k$.
+\end{theorem}
+To determine sequence, use the first few terms. 
+\newline
+\newline
+\textbf{Example. } The fibonacci numbers $F_n$ are defined by the following recurrence
+relation: $F_n = F_{n - 1} + F_{n - 2}$ with initial conditions $F_0 = 0, F_1 = 1.$
+\newline
+\newline
+$A) $ A general recurrence relation of order $k$ looks like 
+$$a_n + c_1(n)a_{n - 1} + \dots + c_k(n)a_{n - k} = f(n).$$
+here, $c_i(n)$ and $f(n)$ are arbitary functions. We assume $c_k(n) \not = 0,$
+\newline
+$\bullet $ the recurrence is linear if $c_i(n)$ are constant functions. 
+\newline
+$\bullet $ the recurrence is homogenous if $f(n) = 0.$
+\newpage
+\subsection{First and second order linear}
+\begin{theorem}
+  The linear homogenous recurrence of order 1
+  $$a_n - ca_{n - 1} = 0 \text{with} a_0 = A,$$
+  has soution $a_n = Ac^n.$
+\end{theorem}
+\begin{theorem}
+  Consider the second order linear homogenous recurrence $a_n + pa_{n - 1} + qa_{n - 2} = 0,$ and let $\alpha, \beta$ be solutions to
+  $$r^2 + pr + q = 0.$$
+  Then,
+\end{theorem}
+$\bullet $ if $\alpha, \beta$ are real and $\alpha \not = \beta$ the general solution
+is 
+$$a_n = A\alpha^n + B\beta^n.$$
+\newline
+$\bullet $ if $\alpha = \beta$ then the general solution Is
+$$a_n = A\alpha^n + Bn\beta^n.$$
+\newline
+$\bullet $ if $\alpha, \beta$ are complex conjugates (not examinable) i.e. $\alpha_1\beta = pe^{+- i\theta}$ then
+the general solution is 
+$$a_n = p^n(A\text{ cos}n\theta + B\text{ sin}n\theta).$$
+Here, $A$ and $B$ are constants to be determined by initial conditions. 
+\newline
+\newline
+The polynomial $r^2 + pr + q = 0$ associated to a second order linear occurence called characteristic polynomial.
+\newline
+\newline
+\textbf{Remark. } The same technique can be applied to linear homogenous recurrences
+of arbitary order. Use the coefficients to write down a characteristic polynomial. Compute roots.
+\newline
+\newline
+General solution?
+\newline
+\newline
+$a) $ Consider $a_n + pa_{n - 1} + qa_{n - 2} = 0.$
+\newline
+If we assume the solution is the form of $a_n = A \alpha^n,$ then substituting in we get:
+$$A \alpha^n + p(A \alpha^{n - 1}) + q(A \alpha^{n - 2}) = 0,$$
+$$A \alpha^{n - 2} (\alpha^2 + p\alpha + q) = 0.$$
+but if $A \alpha^{n - 2} \not = 0,$
+$$\alpha^2 + p\alpha + q = 0.$$
+in other words, $\alpha$ is a root of the characteristic polynomial.
+\newpage
+\subsection{Examples homogeneous}
+\textbf{Examples. }
+\newline
+\newline
+$1) $ Solve $a_n - 2a_{n - 1} - 3 = 0,$ with $a_0 = 0, a_1 = 4.$
+\newline
+\newline
+$A) $ characteristic equation: $r^2 - 2r - 3 = 0.$
+\newline
+\newline
+It has roots $r = 3, r = -1.$ Take $\alpha = 3, \beta = -1$ then general solution is $a_n = A(3^n) + B(-1^n).$
+\newline
+Now, $a_0 = (A)3^0 + B(-1)^0 = A + B = 0.$
+\newline
+$a_1 = (A)3^1 + B(-1)^1 = 3A - B = 4.$
+\newline
+\newline
+Solving simultaneously, we bet $A = 1, B = -1.$
+\newline
+\newline
+$2) $ Solve fibonacci reccurence $F_{n + 2} = F_{n + 1} + F_n, F_0 = 0, F_1 = 1.$
+\newline
+\newline
+$A) $ Rewrite this as $F_{n + 2} - F_{n + 1} - F_n = 0.$
+\newline
+The characteristic equation is $r^2 - r - 1 = 0.$
+\newline
+\newline
+It has solutions $\alpha_1 \beta = \frac{1 +- \sqrt{5}}{2},$ the general solution being: $a_n = A(\frac{1 + \sqrt{5}}{2})^n + B(\frac{1 - \sqrt{5}}{2})^n.$
+\newline
+\newline
+$$F_0 = 0 => A + B = 0,$$
+$$F_1 = 1 => A(\frac{1 + \sqrt{5}}{2}) + B(\frac{1 - \sqrt{5}}{2}),$$
+where solving simultaneously gives $A = \frac{1}{sqrt{5}}, B = -\frac{1}{sqrt{5}}.$
+\newline
+\newline
+Therefore, $F_n = \frac{1}{\sqrt{5}}(\frac{1 + \sqrt{5}}{2})^n - \frac{1}{\sqrt{5}}(\frac{1 - \sqrt{5}}{2})^n.$
+\newline
+\newline
+$3) $ Solve $a_n = 6a_{n - 1} - 9a_{n - 2}$ with $a_0 = 4, a_1 = 11.$
+\newline
+\newline
+$A) $ Characteristic polynomial is 
+$$r^2 - 6r + 9 = 0,$$
+$$ie \text{ } (r - 3)^2 = 0.$$
+So, $\alpha = \beta = 3,$ the general solution is $a_n = A(3^n) + B(n)(3^n).$
+$$a_0 = 4 => A(3^0) + B(0)(3^0) = A = 4,$$
+$$a_1 = 11 => A(3^1) + B(1)(3^1) = 3(A) + 3(B) = 3(4) + 3B = 1.$$
+Making $B = -\frac{1}{3}$. Therefore, $a_n = 4(3^n) + (-\frac{1}{3})(n)(3^n).$
+\newline
+\newline
+$4) $ Solve 
+$$a_n = -5a_{n - 1} - 6a_{n - 2}.$$
+with $a_0 = 2, a_1 = 1.$
+\newline
+\newline
+$A) $ Characteristic polynomial is $a_n = A(-3^n) + B(-2^n).$
+$$r^2 + 5r + 6 = 0,$$
+$$(r + 3)(r + 2) = 0,$$
+general solution $a_n = $
+$$a_0 = A(-3^0) + B(-2^0) = A + B = 2,$$
+$$a_1 = A(-3^1) + B(-2^1) = -3A - 2B = 1,$$
+Solving simultaneously gives $A = -5, B = 7.$ Therefore, $a_n = -5(-3^n) + 7(-2^n).$
+\newpage
+\subsection{Non-homogeneous recurrence}
+\begin{theorem}
+  The general solution of a second order, non-homogenous solution, linear occurence
+  $$a_n + 9a_{n - 1} + ra_{n - 2} = f(n) -> (1).$$
+  is $a^n$ the form
+  $$a_n = h_n + p_n.$$
+  where $h_n$ is the general solution to the homogenous reccurence relation
+  $$a_n + 9a_{n - 1} + ra_{n - 2} = 0 -> (2).$$
+  and $p_n$ is some 'particular' solution to the equation (1).
+\end{theorem}
+(proof in topic $4$ lecture $4.29$).
+\newpage
+\subsection{Examples non-homogeneous}
+\textbf{Example. } Solve $a_n - a_{n - 1} - 6a_{n - 2} = 12$ with $a_0 = 1, a_1 = 2.$
+\newline
+\newline
+$A) $ Theorem says $a_n = h_n + p_n$ where $h_n$ is solution to $a_n - a_{n - 1} - 6a_{n - 2} = 0.$
+\newline
+\newline
+Whose general solution is
+$$h_n = A(3^n) + B(-2^n),$$
+For $p_n$ gues $p_n = d.$
+\newline
+Substituting we get 
+$$d - d - 6d = 12.$$
+Therefore, $p_n = d = -2.$
+\newline
+Out recurrence has a general solution
+$$a_n = h_n + p_n,$$
+$$ = A(3^n) + B(-2^n) - 2.$$
+Now, 
+$$a_0 = 1 => A(1) + B(1) - 2 = 1,$$
+$$a_1 = 2 => A(3) + B(2) - 2 = 2.$$
+Which gives $A = 2, B = 1.$
+\newline
+\newline
+Therefore, $a_n = 2(3^n) + (-2^n) - 2.$
+\newline
+\newline
+\textbf{Remark } To find the values of the constants $A$ and $B$ in the 
+general solution, we substitute the initial condition into $a_n = h_n + p_n$ and 
+not $h_n$ only. 
+\newline
+\newline
+\textbf{Example. } Find the general solution to $a_n - a_{n - 1} - 6a_{n - 2} = 36n.$
+\newline
+\newline
+$A) $ First compute $h_n$ ie a general solution to $a_n - a_{n - 1} - 6a_{n - 2} = 0,$
+$$h_n = A(3^n) + B(-2^n).$$
+Since $f(n) = 36n$ is a polynomial of degree $1$ we guess $p_n = cn + d.$
+\newline
+Substituting we get
+$$(cn + d) - (c(n - 1) + d) - 6(c(n - 2) + d) = 36n,$$
+$$(c - c - 6c)n + (d + c - d + 12c - 6d) = 36n,$$
+$$ie \text{ } (-6c)n + (13c - 6d) = 36n + 0.$$
+Therefore, $c = -6.$
+$$13() - 6d = 0 => d = -13.$$
+Therefore, the general solution is $a_n = A(3^n) + B(-2^n) + (-6)n - 13.$
+\newline
+\newline
+\textbf{Example. } Solve $a_n + 5a_{n - 1} - 6a_{n - 2} = (-6)^n$ with $a_0 = 12, a_1 = \frac{-1}{7}.$
+\newline
+\newline
+$A) $ 
+$$h_n = A(-6^n) + B(1^n).$$
+For $p_n,$ guess $p_n = c(-6^n).$ (won't work since $p_n$ is a solution to the homogenous part.)
+\newline
+\newline  
+Revised guess $p_n = cn(-6^n),$
+\newline
+Substituting, we get:
+$$cn(-6^n) + 5c(n - 1)(-6)^{n - 1} - 6c(n - 2)(-6^{n - 2}) = -6^n.$$
+Simplifying and solving we get,
+$$p_n = \frac{6}{7} (-6^n).$$
+Therefore, general solution $a_n = A(-6^n) + B(1^n) + \frac{6}{7}n(-6^n).$
+\newline
+Now,
+$$a_0 = 12 => A(-6^0) + B(1^0) + \frac{6}{7}(0)(-6^0) = 12,$$
+$$a_1 = \frac{-1}{7} => A(-6^1) + B(1^1) + \frac{6}{7}(1)(-6^1) = \frac{1}{7}.$$
+$$=> A = 1, B = 11.$$
+Therefore, $a_n = (-6^n) + 11(1^n) + \frac{6}{7}n(-6^n).$
+\newline
+\newline
+\textbf{Example. } Find the general solution 
+$$a_n - a_{n - 1} - 6(a_{n - 2}) = 2n(3^n). (\star).$$
+$A) $ The homogenous part is given by:
+$$h_n = A(3^n) + B(-2^n),$$
+For particular solution try $p_n = (cn + d) 3^n.$
+\newline
+\newline
+Doesn't work because $3^n$ is already a solution to the homogenous part so 
+substituting into $(\star)$ will give $0 = 2n(3^n),$ which is false.
+\newline
+\newline
+Try $p_n = n(cn + d)(3^n)$ instead. Substituting and simplifying, we get 
+$$(32c)n3^{n - 2} - (-21c + 5d)3^{n - 2} = 18n3^{n - 2}.$$
+Ie
+$$32c = 18, -21c + 5d = 0.$$
+to get $c = \frac{9}{15}, d = \frac{243}{255}.$
+\newline
+\newline
+Hence, $p_n = n(\frac{9}{15}n + \frac{243}{255})3^n.$
+\newline
+Therefore, the general solution is $a_n = A(3^n) + B(-2^n) + n(\frac{9}{15}n + \frac{243}{255})(3^n).$
+\newpage
 \end{document}
