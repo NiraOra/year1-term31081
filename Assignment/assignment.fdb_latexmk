@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1665745626 "/Users/niranjanaarunmenon/Desktop/Term 3 /Discrete Mathematics/term3-1081/Assignment/assignment.tex" "assignment.pdf" "assignment" 1665745627
-  "/Users/niranjanaarunmenon/Desktop/Term 3 /Discrete Mathematics/term3-1081/Assignment/assignment.tex" 1665745624 8461 90602c45310de42981b72efd8f6c94e6 ""
+["pdflatex"] 1667908768 "/Users/niranjanaarunmenon/Desktop/Term 3 /Discrete Mathematics/term3-1081/Assignment/assignment.tex" "assignment.pdf" "assignment" 1667908769
+  "/Users/niranjanaarunmenon/Desktop/Term 3 /Discrete Mathematics/term3-1081/Assignment/assignment.tex" 1667908768 8758 55c81005707ae56e94d403926b40a5da ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -95,10 +95,10 @@
   "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1647878959 4410336 7d30a02e9fa9a16d7d1f8d037ba69641 ""
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1661306408 2826441 12d1eb35fb558fb993dc66a32e4b5118 ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
-  "assignment.aux" 1665745626 2182 287b430f7ccb2d08c6cb9fe11db4b1e7 "pdflatex"
-  "assignment.out" 1665745626 992 d2d3f51d6a9ba5dddfda738cdf66903d "pdflatex"
-  "assignment.tex" 1665745624 8461 90602c45310de42981b72efd8f6c94e6 ""
-  "assignment.toc" 1665745626 912 5c0bdd5c8c98aeaec74fd72633a78245 "pdflatex"
+  "assignment.aux" 1667908768 2182 287b430f7ccb2d08c6cb9fe11db4b1e7 "pdflatex"
+  "assignment.out" 1667908768 992 d2d3f51d6a9ba5dddfda738cdf66903d "pdflatex"
+  "assignment.tex" 1667908768 8758 55c81005707ae56e94d403926b40a5da ""
+  "assignment.toc" 1667908768 912 5c0bdd5c8c98aeaec74fd72633a78245 "pdflatex"
   (generated)
   "assignment.aux"
   "assignment.log"
